@@ -217,7 +217,7 @@
         </div>
         <div class="price-name">The Grace Clean</div>
         <div class="price-tag-line">Essential Maintenance</div>
-        <div class="price-amount"><sup>$</sup>60 <small>– $90</small></div>
+        <div class="price-amount"><sup>$</sup>60 <small>– $100</small></div>
         <div class="price-note">Per visit &middot; up to 1,500 sq ft</div>
         <div class="price-divider"></div>
         <p class="price-desc">A faithful, consistent clean for homes that need regular upkeep. Perfect for weekly or biweekly clients who want a fresh, tidy home maintained with care and reliability.</p>
@@ -238,7 +238,7 @@
         </div>
         <div class="price-name">The Redeemed Clean</div>
         <div class="price-tag-line">Deep Refresh</div>
-        <div class="price-amount"><sup>$</sup>130 <small>– $190</small></div>
+        <div class="price-amount"><sup>$</sup>140 <small>– $220</small></div>
         <div class="price-note">Per visit &middot; up to 2,000 sq ft</div>
         <div class="price-divider"></div>
         <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. Ideal for first-time clients, seasonal refreshes, or homes needing extra attention.</p>
@@ -247,7 +247,6 @@
           <li>Inside oven, microwave &amp; refrigerator</li>
           <li>Baseboards, door frames &amp; light switches</li>
           <li>Window sills &amp; interior window cleaning</li>
-          <li>Grout scrubbing &amp; tile detail work</li>
           <li>Cabinet fronts &amp; drawer exteriors</li>
           <li>Under furniture vacuuming</li>
         </ul>
@@ -259,18 +258,17 @@
         </div>
         <div class="price-name">The Restored Home</div>
         <div class="price-tag-line">Organization &amp; Declutter</div>
-        <div class="price-amount"><sup>$</sup>150 <small>– $240</small></div>
+        <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
         <div class="price-note">Per session &middot; 3–5 hours</div>
         <div class="price-divider"></div>
         <p class="price-desc">More than clean — this is a full reset. We bring peace and order to overwhelmed spaces, helping families reclaim their home through thoughtful decluttering and intentional organization.</p>
         <ul class="price-includes">
           <li>Full room organization (closets, pantry, etc.)</li>
-          <li>Decluttering coaching &amp; sorting system</li>
+          <li>Decluttering &amp; sorting system</li>
           <li>Donation bag prep &amp; coordination</li>
-          <li>Labeled storage &amp; categorized systems</li>
+          <li>Organized storage &amp; categorized systems</li>
           <li>Kitchen pantry or cabinet overhaul</li>
           <li>Before &amp; after photo documentation</li>
-          <li>Personalized organization plan provided</li>
         </ul>
       </div>
 
@@ -280,7 +278,7 @@
         </div>
         <div class="price-name">Move-In / Move-Out</div>
         <div class="price-tag-line">Fresh Start Clean</div>
-        <div class="price-amount"><sup>$</sup>175 <small>– $280</small></div>
+        <div class="price-amount"><sup>$</sup>200 <small>– $350</small></div>
         <div class="price-note">Flat rate &middot; based on sq ft</div>
         <div class="price-divider"></div>
         <p class="price-desc">Starting fresh or leaving well — this package ensures every inch is spotless for the next chapter. Great for renters, homeowners, and local landlords beginning or ending a lease.</p>
@@ -317,15 +315,13 @@
     <div class="divider-gold"><span>&#10022;</span></div>
     <p class="section-sub" style="margin-bottom:32px">Enhance any package with these individual add-on services. Just check them off when you submit your request.</p>
     <div class="addons-grid">
-      <div class="addon-card"><div><div class="addon-name">Laundry — Wash &amp; Fold</div><div class="addon-desc">One full load washed, dried &amp; folded</div></div><div class="addon-price">+$20</div></div>
       <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside</div></div><div class="addon-price">+$25</div></div>
       <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down</div></div><div class="addon-price">+$20</div></div>
       <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$20</div></div>
+      <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows, Refrigerator Deep Clean, and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
       <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, or bedroom</div></div><div class="addon-price">+$50</div></div>
-      <div class="addon-card"><div><div class="addon-name">Garage Sweep &amp; Tidy</div><div class="addon-desc">Sweep out &amp; basic organization</div></div><div class="addon-price">+$35</div></div>
       <div class="addon-card"><div><div class="addon-name">Patio / Porch Sweep</div><div class="addon-desc">Sweep, wipe furniture &amp; tidy</div></div><div class="addon-price">+$20</div></div>
-      <div class="addon-card"><div><div class="addon-name">Same-Day / Rush Booking</div><div class="addon-desc">Last-minute scheduling fee</div></div><div class="addon-price">+$25</div></div>
-      <div class="addon-card"><div><div class="addon-name">Travel Fee (10+ miles)</div><div class="addon-desc">Applied for extended service area</div></div><div class="addon-price">+$15</div></div>
+      <div class="addon-card"><div><div class="addon-name">Laundry — Wash &amp; Fold</div><div class="addon-desc">One full load washed, dried &amp; folded</div></div><div class="addon-price">+$20</div></div>
     </div>
   </div>
 </section>
@@ -344,7 +340,7 @@
         </div>
         <div class="contact-detail">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-          <div>Serving local &amp; surrounding areas</div>
+          <div>Proudly serving Carlinville, IL &amp; surrounding areas</div>
         </div>
         <div class="contact-detail">
           <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
@@ -387,14 +383,33 @@
               </select>
             </div>
           </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Bathrooms</label>
+              <select id="bathrooms">
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option>
+                <option>4</option><option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Pets in the Home?</label>
+              <select id="pets">
+                <option value="">Select one</option>
+                <option>No pets</option>
+                <option>Dogs</option><option>Cats</option>
+                <option>Dogs &amp; Cats</option><option>Other</option>
+              </select>
+            </div>
+          </div>
           <div class="form-group">
             <label>Service Interested In *</label>
             <select id="service" required>
               <option value="">Select a service</option>
-              <option>The Grace Clean — Maintenance ($60–$90)</option>
-              <option>The Redeemed Clean — Deep Refresh ($130–$190)</option>
-              <option>The Restored Home — Organization ($150–$240)</option>
-              <option>Move-In / Move-Out Clean ($175–$280)</option>
+              <option>The Grace Clean — Maintenance ($60–$100)</option>
+              <option>The Redeemed Clean — Deep Refresh ($140–$220)</option>
+              <option>The Restored Home — Organization ($180–$300)</option>
+              <option>Move-In / Move-Out Clean ($200–$350)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
           </div>
@@ -412,30 +427,25 @@
           <div class="form-group">
             <label>Optional Add-Ons</label>
             <div class="checkbox-group">
-              <label><input type="checkbox" class="addon" value="Laundry Wash & Fold (+$20)"> Laundry — Wash &amp; Fold (+$20)</label>
               <label><input type="checkbox" class="addon" value="Interior Windows (+$25)"> Interior Windows (+$25)</label>
               <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$20)"> Refrigerator Deep Clean (+$20)</label>
               <label><input type="checkbox" class="addon" value="Oven Deep Clean (+$20)"> Oven Deep Clean (+$20)</label>
               <label><input type="checkbox" class="addon" value="Single Room Organization (+$50)"> Single Room Organization (+$50)</label>
-              <label><input type="checkbox" class="addon" value="Garage Sweep & Tidy (+$35)"> Garage Sweep &amp; Tidy (+$35)</label>
               <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
+              <label><input type="checkbox" class="addon" value="Laundry Wash & Fold (+$20)"> Laundry — Wash &amp; Fold (+$20)</label>
             </div>
-          </div>
-          <div class="form-group">
-            <label>Pets in the Home?</label>
-            <select id="pets">
-              <option value="">Select one</option>
-              <option>No pets</option>
-              <option>Dogs</option><option>Cats</option>
-              <option>Dogs &amp; Cats</option><option>Other</option>
-            </select>
+            <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows, Refrigerator &amp; Oven Deep Clean are included with The Redeemed Clean — no need to select them separately.</p>
           </div>
           <div class="form-group">
             <label>Special Instructions / Notes</label>
             <textarea id="notes" placeholder="Allergies, sensitivities, areas of focus, access instructions..."></textarea>
           </div>
+          <div class="form-group">
+            <label>How Did You Hear About Us?</label>
+            <input type="text" id="referral" placeholder="e.g. referred by a friend, Facebook, word of mouth...">
+          </div>
           <button type="submit" class="form-submit" id="submitBtn">Send My Quote Request</button>
-          <p class="form-note">We'll respond within 24 hours. No spam, ever.</p>
+          <p class="form-note">We'll be in touch with you promptly. No spam, ever.</p>
         </form>
         <div class="success-msg" id="successMsg">
           <h4>Request Received!</h4>
@@ -451,7 +461,7 @@
 
 <footer>
   <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
-  <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Serving Our Local Community</p>
+  <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
   <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
 </footer>
 
@@ -480,11 +490,13 @@
       address:document.getElementById('address').value,
       home_size:document.getElementById('homeSize').value||'Not specified',
       bedrooms:document.getElementById('bedrooms').value||'Not specified',
+      bathrooms:document.getElementById('bathrooms').value||'Not specified',
       service:document.getElementById('service').value,
       frequency:document.getElementById('frequency').value||'Not specified',
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
-      notes:document.getElementById('notes').value||'None'
+      notes:document.getElementById('notes').value||'None',
+      referral:document.getElementById('referral').value||'Not provided'
     };
 
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
