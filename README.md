@@ -11,7 +11,7 @@
   :root{--gold:#d4a843;--dark:#1b4332;--light:#f0f7f4;--white:#fff;--muted:#74a98a;--text:#3a5a47}
   html{scroll-behavior:smooth}
   body{font-family:'Lato',sans-serif;color:var(--dark);background:var(--white)}
-
+ 
   nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.97);z-index:100;border-bottom:1px solid #ede8e1;padding:0 5%}
   .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
   .nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dark)}
@@ -26,7 +26,7 @@
   .mobile-menu{display:none;position:fixed;top:64px;left:0;width:100%;background:var(--white);border-bottom:1px solid #ede8e1;padding:20px 5%;z-index:99}
   .mobile-menu a{display:block;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:var(--dark);padding:12px 0;border-bottom:1px solid #f0ece7;font-weight:600}
   @media(max-width:680px){.nav-links{display:none}.hamburger{display:flex}}
-
+ 
   .hero{min-height:100vh;background:linear-gradient(160deg,#0d2b1f 0%,#1b4332 50%,#2d6a4f 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden}
   .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23b5956a' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
   .hero-content{position:relative;max-width:700px}
@@ -39,7 +39,7 @@
   .btn-primary:hover{opacity:.88}
   .btn-outline{border:1px solid rgba(255,255,255,0.35);color:var(--white);padding:14px 32px;border-radius:3px;text-decoration:none;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;transition:.2s}
   .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
-
+ 
   section{padding:80px 5%}
   .section-inner{max-width:1100px;margin:0 auto}
   .section-label{font-size:0.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
@@ -50,7 +50,7 @@
   .divider-gold::before{background:linear-gradient(to right,var(--gold),transparent)}
   .divider-gold::after{background:linear-gradient(to left,var(--gold),transparent)}
   .divider-gold span{color:var(--gold);font-size:0.7rem}
-
+ 
   #about{background:var(--light)}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
   @media(max-width:700px){.about-grid{grid-template-columns:1fr}}
@@ -64,7 +64,7 @@
   .about-img-box h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px}
   .about-img-box p{font-size:0.83rem;line-height:1.8;color:rgba(255,255,255,0.75)}
   .about-tagline{margin-top:24px;border-top:1px solid rgba(181,149,106,0.3);padding-top:20px;font-family:'Playfair Display',serif;font-style:italic;font-size:0.85rem;color:var(--gold)}
-
+ 
   #pricing{background:var(--white)}
   .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
   .price-card{border-radius:8px;border:1px solid #ede8e1;padding:32px 26px;display:flex;flex-direction:column;position:relative;transition:.2s}
@@ -85,14 +85,14 @@
   .price-includes li{font-size:0.78rem;color:var(--text);padding:5px 0;border-bottom:1px solid #f5f2ee;display:flex;gap:8px;line-height:1.5}
   .price-includes li:last-child{border-bottom:none}
   .price-includes li::before{content:'–';color:var(--gold);font-weight:700;flex-shrink:0}
-
+ 
   #addons{background:var(--light)}
   .addons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
   .addon-card{background:var(--white);border-radius:6px;padding:18px;display:flex;justify-content:space-between;align-items:center;border:1px solid #ede8e1}
   .addon-name{font-size:0.85rem;font-weight:600;color:var(--dark);margin-bottom:3px}
   .addon-desc{font-size:0.72rem;color:var(--muted)}
   .addon-price{font-size:1rem;font-weight:700;color:var(--gold);white-space:nowrap;margin-left:12px}
-
+ 
   .recurring-section{margin-top:60px;background:#1b4332;border-radius:10px;padding:40px;text-align:center}
   .recurring-section h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:8px}
   .recurring-section p{color:rgba(255,255,255,0.65);font-size:0.85rem;margin-bottom:28px}
@@ -101,7 +101,7 @@
   .rec-card strong{display:block;font-size:1.3rem;color:var(--gold);margin-bottom:4px}
   .rec-card em{display:block;color:var(--white);font-style:normal;font-size:0.82rem;font-weight:600;margin-bottom:2px}
   .rec-card span{color:rgba(255,255,255,0.5);font-size:0.72rem}
-
+ 
   #contact{background:var(--white)}
   .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
   @media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
@@ -112,7 +112,7 @@
   .contact-detail .icon svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
   .contact-promise{background:var(--light);border-radius:6px;padding:18px;margin-top:28px;font-size:0.78rem;color:var(--text);line-height:1.7;border-left:3px solid var(--gold)}
   .contact-promise strong{color:var(--dark)}
-
+ 
   .form-card{background:var(--light);border-radius:8px;padding:36px}
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media(max-width:500px){.form-row{grid-template-columns:1fr}}
@@ -132,7 +132,7 @@
   .success-msg h4{color:#3a7a50;font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:8px}
   .success-msg p{font-size:0.85rem;color:#5a7a65;line-height:1.7}
   .error-msg{display:none;background:#fff0f0;border:1px solid #f5c1c1;border-radius:6px;padding:16px;text-align:center;margin-top:12px;font-size:0.82rem;color:#a33}
-
+ 
   footer{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:36px 5%}
   .foot-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
   .foot-logo span{font-style:italic;color:var(--gold)}
@@ -140,7 +140,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="nav-inner">
     <div class="nav-logo">Redeemed <span>&</span> Cleaned</div>
@@ -161,7 +161,7 @@
   <a href="#addons" onclick="toggleMenu()">Add-Ons</a>
   <a href="#contact" onclick="toggleMenu()">Get a Quote</a>
 </div>
-
+ 
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-badge">Residential Cleaning &amp; Organization</div>
@@ -173,7 +173,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
@@ -203,14 +203,14 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="pricing">
   <div class="section-inner">
     <div class="section-label">Our Services</div>
     <h2 class="section-title">Honest Pricing, Quality Work</h2>
     <div class="divider-gold"><span>&#10022;</span></div>
     <div class="pricing-grid">
-
+ 
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -230,7 +230,7 @@
           <li>Bed making (linens provided by client)</li>
         </ul>
       </div>
-
+ 
       <div class="price-card popular">
         <div class="popular-badge">Most Popular</div>
         <div class="price-icon">
@@ -244,14 +244,14 @@
         <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. Ideal for first-time clients, seasonal refreshes, or homes needing extra attention.</p>
         <ul class="price-includes">
           <li>Everything in The Grace Clean</li>
-          <li>Inside oven, microwave &amp; refrigerator</li>
+          <li>Inside oven &amp; microwave</li>
           <li>Baseboards, door frames &amp; light switches</li>
           <li>Window sills &amp; interior window cleaning</li>
           <li>Cabinet fronts &amp; drawer exteriors</li>
           <li>Under furniture vacuuming</li>
         </ul>
       </div>
-
+ 
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
@@ -271,7 +271,7 @@
           <li>Before &amp; after photo documentation</li>
         </ul>
       </div>
-
+ 
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M10 22v-6h4v6"/></svg>
@@ -292,9 +292,9 @@
           <li>Certificate of clean available on request</li>
         </ul>
       </div>
-
+ 
     </div>
-
+ 
     <div class="recurring-section">
       <h3>Recurring Client Savings</h3>
       <p>Commit to regular service and save on every visit.</p>
@@ -307,7 +307,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section id="addons">
   <div class="section-inner">
     <div class="section-label">Customize Your Clean</div>
@@ -316,16 +316,16 @@
     <p class="section-sub" style="margin-bottom:32px">Enhance any package with these individual add-on services. Just check them off when you submit your request.</p>
     <div class="addons-grid">
       <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside</div></div><div class="addon-price">+$25</div></div>
-      <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down</div></div><div class="addon-price">+$20</div></div>
-      <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$20</div></div>
-      <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows, Refrigerator Deep Clean, and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
+      <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$30</div></div>
+      <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
+      <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down</div></div><div class="addon-price">+$30</div></div>
       <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, or bedroom</div></div><div class="addon-price">+$50</div></div>
       <div class="addon-card"><div><div class="addon-name">Patio / Porch Sweep</div><div class="addon-desc">Sweep, wipe furniture &amp; tidy</div></div><div class="addon-price">+$20</div></div>
-      <div class="addon-card"><div><div class="addon-name">Laundry — Wash &amp; Fold</div><div class="addon-desc">One full load washed, dried &amp; folded</div></div><div class="addon-price">+$20</div></div>
+      <div class="addon-card"><div><div class="addon-name">Laundry — Fold &amp; Organize</div><div class="addon-desc">Fold and organize one full load</div></div><div class="addon-price">+$30</div></div>
     </div>
   </div>
 </section>
-
+ 
 <section id="contact">
   <div class="section-inner">
     <div class="contact-grid">
@@ -350,7 +350,7 @@
           <strong>Our Promise:</strong> We enter every home with honesty, integrity, and a genuine desire to serve. Your space and your trust are safe with us.
         </div>
       </div>
-
+ 
       <div class="form-card">
         <form id="quoteForm" onsubmit="submitForm(event)">
           <div class="form-row">
@@ -428,13 +428,13 @@
             <label>Optional Add-Ons</label>
             <div class="checkbox-group">
               <label><input type="checkbox" class="addon" value="Interior Windows (+$25)"> Interior Windows (+$25)</label>
-              <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$20)"> Refrigerator Deep Clean (+$20)</label>
-              <label><input type="checkbox" class="addon" value="Oven Deep Clean (+$20)"> Oven Deep Clean (+$20)</label>
+              <label><input type="checkbox" class="addon" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
+              <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30)</label>
               <label><input type="checkbox" class="addon" value="Single Room Organization (+$50)"> Single Room Organization (+$50)</label>
               <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
-              <label><input type="checkbox" class="addon" value="Laundry Wash & Fold (+$20)"> Laundry — Wash &amp; Fold (+$20)</label>
+              <label><input type="checkbox" class="addon" value="Laundry Fold & Organize (+$30)"> Laundry — Fold &amp; Organize (+$30)</label>
             </div>
-            <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows, Refrigerator &amp; Oven Deep Clean are included with The Redeemed Clean — no need to select them separately.</p>
+            <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows and Oven Deep Clean are included with The Redeemed Clean — no need to select them separately.</p>
           </div>
           <div class="form-group">
             <label>Special Instructions / Notes</label>
@@ -458,30 +458,30 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
   <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
   <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
 </footer>
-
+ 
 <script>
   (function(){emailjs.init({publicKey:"O06yzWAZebWqid3hP"});})();
-
+ 
   function toggleMenu(){
     var m=document.getElementById('mobileMenu');
     m.style.display=m.style.display==='block'?'none':'block';
   }
-
+ 
   function submitForm(e){
     e.preventDefault();
     var btn=document.getElementById('submitBtn');
     btn.disabled=true;
     btn.textContent='Sending...';
-
+ 
     var addons=[];
     document.querySelectorAll('.addon:checked').forEach(function(c){addons.push(c.value);});
-
+ 
     var params={
       to_email:'alissahicks@redeemedandcleaned.com',
       from_name:document.getElementById('firstName').value+' '+document.getElementById('lastName').value,
@@ -498,7 +498,7 @@
       notes:document.getElementById('notes').value||'None',
       referral:document.getElementById('referral').value||'Not provided'
     };
-
+ 
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
       .then(function(){
         document.getElementById('quoteForm').style.display='none';
