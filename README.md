@@ -248,7 +248,6 @@
           <li>Baseboards, door frames &amp; light switches</li>
           <li>Window sills &amp; interior window cleaning</li>
           <li>Cabinet fronts &amp; drawer exteriors</li>
-          <li>Under furniture vacuuming</li>
         </ul>
       </div>
  
