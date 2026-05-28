@@ -507,13 +507,15 @@
       .then(function(){
         document.getElementById('quoteForm').style.display='none';
         document.getElementById('successMsg').style.display='block';
-      },function(){
+      },function(err){
         btn.disabled=false;
         btn.textContent='Send My Quote Request';
+        var errDetail = err && (err.text || err.message || JSON.stringify(err)) || 'Unknown error';
+        document.getElementById('errorMsg').textContent='Something went wrong: ' + errDetail;
         document.getElementById('errorMsg').style.display='block';
+        console.error('EmailJS quote error:', err);
       });
   }
-}
 </script>
 
 <!-- ═══════════════════════════════════════════════════
@@ -892,9 +894,8 @@
       document.getElementById('appForm').reset();
       appFileNameEl.style.display='none';
     }catch(err){
-      var errDetail = err && (err.text || err.message || JSON.stringify(err)) || 'Unknown error';
       statusEl.className='app-status error';
-      statusEl.textContent='Error: ' + errDetail;
+      statusEl.textContent='Something went wrong. Please email us directly at alissahicks@redeemedandcleaned.com.';
       statusEl.style.display='block';
       console.error('EmailJS error:', err);
     }
