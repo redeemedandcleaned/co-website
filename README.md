@@ -889,9 +889,11 @@
       document.getElementById('appForm').reset();
       appFileNameEl.style.display='none';
     }catch(err){
+      var errDetail = err && (err.text || err.message || JSON.stringify(err)) || 'Unknown error';
       statusEl.className='app-status error';
-      statusEl.textContent='Something went wrong. Please email us directly at alissahicks@redeemedandcleaned.com.';
+      statusEl.textContent='Error: ' + errDetail;
       statusEl.style.display='block';
+      console.error('EmailJS error:', err);
     }
     btn.disabled=false;btn.textContent='Submit Application';
   });
