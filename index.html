@@ -653,13 +653,13 @@
         <div class="app-grid">
           <div class="app-field app-full"><label>Are you legally authorized to work in the United States? <span class="req">*</span></label>
             <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="work_auth" value="Yes" required> Yes, I am authorized to work in the U.S.</label>
+              <label class="app-check-item"><input type="radio" name="work_auth" value="Yes"> Yes, I am authorized to work in the U.S.</label>
               <label class="app-check-item"><input type="radio" name="work_auth" value="No"> No</label>
             </div>
           </div>
           <div class="app-field app-full"><label>Are you 18 years of age or older? <span class="req">*</span></label>
             <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="age_18" value="Yes" required> Yes</label>
+              <label class="app-check-item"><input type="radio" name="age_18" value="Yes"> Yes</label>
               <label class="app-check-item"><input type="radio" name="age_18" value="No"> No</label>
             </div>
           </div>
@@ -671,7 +671,7 @@
           </div>
           <div class="app-field app-full"><label>Do you have a valid driver's license and reliable transportation? <span class="req">*</span></label>
             <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="transportation" value="Yes" required> Yes</label>
+              <label class="app-check-item"><input type="radio" name="transportation" value="Yes"> Yes</label>
               <label class="app-check-item"><input type="radio" name="transportation" value="No"> No</label>
             </div>
           </div>
@@ -822,20 +822,20 @@
 
   document.getElementById('appForm').addEventListener('submit',async function(e){
     e.preventDefault();
-    var ok=true;
-    if(!getVal('first_name'))ok=false;
-    if(!getVal('last_name'))ok=false;
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getVal('app_email')))ok=false;
-    if(getVal('app_phone').length<7)ok=false;
-    if(!getVal('app_address'))ok=false;
-    if(!getVal('hours_week'))ok=false;
-    if(!getVal('start_date'))ok=false;
-    if(!document.getElementById('appConsent').checked)ok=false;
+    var errors=[];
+    if(!getVal('first_name'))errors.push('First name');
+    if(!getVal('last_name'))errors.push('Last name');
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getVal('app_email')))errors.push('Valid email address');
+    if(getVal('app_phone').length<7)errors.push('Phone number');
+    if(!getVal('app_address'))errors.push('Street address');
+    if(!getVal('hours_week'))errors.push('Hours per week');
+    if(!getVal('start_date'))errors.push('Start date');
+    if(!document.getElementById('appConsent').checked)errors.push('Consent checkbox');
 
     var statusEl=document.getElementById('appStatusMsg');
-    if(!ok){
+    if(errors.length>0){
       statusEl.className='app-status error';
-      statusEl.textContent='Please complete all required fields before submitting.';
+      statusEl.textContent='Please complete the following: '+errors.join(', ')+'.';
       statusEl.style.display='block';
       return;
     }
