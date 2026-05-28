@@ -11,7 +11,7 @@
   :root{--gold:#d4a843;--dark:#1b4332;--light:#f0f7f4;--white:#fff;--muted:#74a98a;--text:#3a5a47}
   html{scroll-behavior:smooth}
   body{font-family:'Lato',sans-serif;color:var(--dark);background:var(--white)}
- 
+
   nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.97);z-index:100;border-bottom:1px solid #ede8e1;padding:0 5%}
   .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
   .nav-logo{font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--dark)}
@@ -26,7 +26,7 @@
   .mobile-menu{display:none;position:fixed;top:64px;left:0;width:100%;background:var(--white);border-bottom:1px solid #ede8e1;padding:20px 5%;z-index:99}
   .mobile-menu a{display:block;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:var(--dark);padding:12px 0;border-bottom:1px solid #f0ece7;font-weight:600}
   @media(max-width:680px){.nav-links{display:none}.hamburger{display:flex}}
- 
+
   .hero{min-height:100vh;background:linear-gradient(160deg,#0d2b1f 0%,#1b4332 50%,#2d6a4f 100%);display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 5% 60px;position:relative;overflow:hidden}
   .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23b5956a' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
   .hero-content{position:relative;max-width:700px}
@@ -39,7 +39,7 @@
   .btn-primary:hover{opacity:.88}
   .btn-outline{border:1px solid rgba(255,255,255,0.35);color:var(--white);padding:14px 32px;border-radius:3px;text-decoration:none;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;transition:.2s}
   .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
- 
+
   section{padding:80px 5%}
   .section-inner{max-width:1100px;margin:0 auto}
   .section-label{font-size:0.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
@@ -50,7 +50,7 @@
   .divider-gold::before{background:linear-gradient(to right,var(--gold),transparent)}
   .divider-gold::after{background:linear-gradient(to left,var(--gold),transparent)}
   .divider-gold span{color:var(--gold);font-size:0.7rem}
- 
+
   #about{background:var(--light)}
   .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
   @media(max-width:700px){.about-grid{grid-template-columns:1fr}}
@@ -64,7 +64,7 @@
   .about-img-box h3{font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:12px}
   .about-img-box p{font-size:0.83rem;line-height:1.8;color:rgba(255,255,255,0.75)}
   .about-tagline{margin-top:24px;border-top:1px solid rgba(181,149,106,0.3);padding-top:20px;font-family:'Playfair Display',serif;font-style:italic;font-size:0.85rem;color:var(--gold)}
- 
+
   #pricing{background:var(--white)}
   .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
   .price-card{border-radius:8px;border:1px solid #ede8e1;padding:32px 26px;display:flex;flex-direction:column;position:relative;transition:.2s}
@@ -85,14 +85,14 @@
   .price-includes li{font-size:0.78rem;color:var(--text);padding:5px 0;border-bottom:1px solid #f5f2ee;display:flex;gap:8px;line-height:1.5}
   .price-includes li:last-child{border-bottom:none}
   .price-includes li::before{content:'–';color:var(--gold);font-weight:700;flex-shrink:0}
- 
+
   #addons{background:var(--light)}
   .addons-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
   .addon-card{background:var(--white);border-radius:6px;padding:18px;display:flex;justify-content:space-between;align-items:center;border:1px solid #ede8e1}
   .addon-name{font-size:0.85rem;font-weight:600;color:var(--dark);margin-bottom:3px}
   .addon-desc{font-size:0.72rem;color:var(--muted)}
   .addon-price{font-size:1rem;font-weight:700;color:var(--gold);white-space:nowrap;margin-left:12px}
- 
+
   .recurring-section{margin-top:60px;background:#1b4332;border-radius:10px;padding:40px;text-align:center}
   .recurring-section h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:8px}
   .recurring-section p{color:rgba(255,255,255,0.65);font-size:0.85rem;margin-bottom:28px}
@@ -101,7 +101,7 @@
   .rec-card strong{display:block;font-size:1.3rem;color:var(--gold);margin-bottom:4px}
   .rec-card em{display:block;color:var(--white);font-style:normal;font-size:0.82rem;font-weight:600;margin-bottom:2px}
   .rec-card span{color:rgba(255,255,255,0.5);font-size:0.72rem}
- 
+
   #contact{background:var(--white)}
   .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
   @media(max-width:760px){.contact-grid{grid-template-columns:1fr}}
@@ -112,7 +112,7 @@
   .contact-detail .icon svg{width:16px;height:16px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
   .contact-promise{background:var(--light);border-radius:6px;padding:18px;margin-top:28px;font-size:0.78rem;color:var(--text);line-height:1.7;border-left:3px solid var(--gold)}
   .contact-promise strong{color:var(--dark)}
- 
+
   .form-card{background:var(--light);border-radius:8px;padding:36px}
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media(max-width:500px){.form-row{grid-template-columns:1fr}}
@@ -132,23 +132,26 @@
   .success-msg h4{color:#3a7a50;font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:8px}
   .success-msg p{font-size:0.85rem;color:#5a7a65;line-height:1.7}
   .error-msg{display:none;background:#fff0f0;border:1px solid #f5c1c1;border-radius:6px;padding:16px;text-align:center;margin-top:12px;font-size:0.82rem;color:#a33}
- 
+
   footer{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:36px 5%}
   .foot-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
   .foot-logo span{font-style:italic;color:var(--gold)}
   footer p{font-size:0.75rem;margin-top:6px}
+  .foot-careers{display:inline-block;margin-top:14px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(212,168,67,0.35);padding:6px 18px;border-radius:3px;transition:.2s}
+  .foot-careers:hover{background:var(--gold);color:var(--dark)}
 </style>
 </head>
 <body>
- 
+
 <nav>
   <div class="nav-inner">
-    <div class="nav-logo">Redeemed <span>&</span> Cleaned</div>
+    <div class="nav-logo" onclick="showMain();window.scrollTo(0,0);" style="cursor:pointer">Redeemed <span>&</span> Cleaned</div>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#pricing">Services</a></li>
-      <li><a href="#addons">Add-Ons</a></li>
-      <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+      <li><a href="#about" onclick="showMain()">About</a></li>
+      <li><a href="#pricing" onclick="showMain()">Services</a></li>
+      <li><a href="#addons" onclick="showMain()">Add-Ons</a></li>
+      <li><a href="#" onclick="showCareers();return false;">Careers</a></li>
+      <li><a href="#contact" class="nav-cta" onclick="showMain()">Get a Quote</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -156,24 +159,25 @@
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#pricing" onclick="toggleMenu()">Services</a>
-  <a href="#addons" onclick="toggleMenu()">Add-Ons</a>
-  <a href="#contact" onclick="toggleMenu()">Get a Quote</a>
+  <a href="#about" onclick="showMain();toggleMenu()">About</a>
+  <a href="#pricing" onclick="showMain();toggleMenu()">Services</a>
+  <a href="#addons" onclick="showMain();toggleMenu()">Add-Ons</a>
+  <a href="#" onclick="showCareers();toggleMenu();return false;">Careers</a>
+  <a href="#contact" onclick="showMain();toggleMenu()">Get a Quote</a>
 </div>
- 
+
 <section class="hero" id="home">
   <div class="hero-content">
     <div class="hero-badge">Residential Cleaning &amp; Organization</div>
     <h1>A Clean Home.<br>A <em>Restored</em> Space.</h1>
     <p>Professional home cleaning, deep cleaning, organization, and decluttering services — done with integrity, care, and attention to every detail.</p>
     <div class="hero-btns">
-      <a href="#pricing" class="btn-primary">View Services</a>
-      <a href="#contact" class="btn-outline">Request a Quote</a>
+      <a href="#pricing" class="btn-primary" onclick="showMain()">View Services</a>
+      <a href="#contact" class="btn-outline" onclick="showMain()">Request a Quote</a>
     </div>
   </div>
 </section>
- 
+
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
@@ -203,14 +207,14 @@
     </div>
   </div>
 </section>
- 
+
 <section id="pricing">
   <div class="section-inner">
     <div class="section-label">Our Services</div>
     <h2 class="section-title">Honest Pricing, Quality Work</h2>
     <div class="divider-gold"><span>&#10022;</span></div>
     <div class="pricing-grid">
- 
+
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -230,7 +234,7 @@
           <li>Bed making (linens provided by client)</li>
         </ul>
       </div>
- 
+
       <div class="price-card popular">
         <div class="popular-badge">Most Popular</div>
         <div class="price-icon">
@@ -250,7 +254,7 @@
           <li>Cabinet fronts &amp; drawer exteriors</li>
         </ul>
       </div>
- 
+
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
@@ -270,7 +274,7 @@
           <li>Before &amp; after photo documentation</li>
         </ul>
       </div>
- 
+
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M10 22v-6h4v6"/></svg>
@@ -291,9 +295,9 @@
           <li>Certificate of clean available on request</li>
         </ul>
       </div>
- 
+
     </div>
- 
+
     <div class="recurring-section">
       <h3>Recurring Client Savings</h3>
       <p>Commit to regular service and save on every visit.</p>
@@ -306,7 +310,7 @@
     </div>
   </div>
 </section>
- 
+
 <section id="addons">
   <div class="section-inner">
     <div class="section-label">Customize Your Clean</div>
@@ -324,7 +328,7 @@
     </div>
   </div>
 </section>
- 
+
 <section id="contact">
   <div class="section-inner">
     <div class="contact-grid">
@@ -349,7 +353,7 @@
           <strong>Our Promise:</strong> We enter every home with honesty, integrity, and a genuine desire to serve. Your space and your trust are safe with us.
         </div>
       </div>
- 
+
       <div class="form-card">
         <form id="quoteForm" onsubmit="submitForm(event)">
           <div class="form-row">
@@ -457,30 +461,31 @@
     </div>
   </div>
 </section>
- 
-<footer>
+
+<footer id="mainFooter">
   <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
   <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
   <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
+  <a href="#" onclick="showCareers();return false;" class="foot-careers">We're Hiring — Join Our Team</a>
 </footer>
- 
+
 <script>
   (function(){emailjs.init({publicKey:"O06yzWAZebWqid3hP"});})();
- 
+
   function toggleMenu(){
     var m=document.getElementById('mobileMenu');
     m.style.display=m.style.display==='block'?'none':'block';
   }
- 
+
   function submitForm(e){
     e.preventDefault();
     var btn=document.getElementById('submitBtn');
     btn.disabled=true;
     btn.textContent='Sending...';
- 
+
     var addons=[];
     document.querySelectorAll('.addon:checked').forEach(function(c){addons.push(c.value);});
- 
+
     var params={
       to_email:'alissahicks@redeemedandcleaned.com',
       from_name:document.getElementById('firstName').value+' '+document.getElementById('lastName').value,
@@ -497,7 +502,7 @@
       notes:document.getElementById('notes').value||'None',
       referral:document.getElementById('referral').value||'Not provided'
     };
- 
+
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
       .then(function(){
         document.getElementById('quoteForm').style.display='none';
@@ -508,6 +513,385 @@
         document.getElementById('errorMsg').style.display='block';
       });
   }
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════════
+     CAREERS PAGE (hidden by default)
+════════════════════════════════════════════════════ -->
+<div id="careersPage" style="display:none">
+
+<style>
+  /* ── Careers-specific styles ── */
+  .careers-hero{background:var(--dark);padding:52px 5% 0;text-align:center;position:relative;overflow:hidden}
+  .careers-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 0%,rgba(212,168,67,.13) 0%,transparent 70%);pointer-events:none}
+  .careers-band{height:4px;background:var(--gold);width:100%;margin-bottom:36px}
+  .careers-band-bot{height:4px;background:var(--gold);width:100%;margin-top:36px}
+  .careers-brand{font-family:'Playfair Display',serif;font-size:.9rem;color:rgba(255,255,255,.55);letter-spacing:4px;text-transform:uppercase;margin-bottom:10px}
+  .careers-brand span{color:var(--gold)}
+  .careers-title{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:#fff;line-height:1.1;margin-bottom:10px}
+  .careers-title em{font-style:italic;color:var(--gold)}
+  .careers-sub{font-size:.82rem;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:22px}
+  .careers-desc{max-width:520px;margin:0 auto 36px;font-size:.97rem;color:rgba(255,255,255,.75);line-height:1.8}
+
+  .perks-row{display:flex;justify-content:center;background:#2d6a4f;flex-wrap:wrap}
+  .perk{flex:1;min-width:160px;max-width:240px;padding:22px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+  .perk:last-child{border-right:none}
+  .perk-icon{font-size:1.4rem;margin-bottom:6px}
+  .perk-label{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:3px}
+  .perk-val{font-size:.92rem;color:#fff;font-weight:600}
+
+  .app-wrap{max-width:760px;margin:44px auto 64px;padding:0 5%}
+  .app-card{background:#fff;box-shadow:0 8px 48px rgba(0,0,0,.1);overflow:hidden}
+  .app-card-band{height:14px;background:var(--dark)}
+  .app-card-band::after{content:'';display:block;height:4px;background:var(--gold);margin-top:3px}
+  .app-card-band-bot{height:14px;background:var(--dark)}
+  .app-card-band-bot::before{content:'';display:block;height:4px;background:var(--gold);margin-bottom:3px}
+  .app-body{padding:40px 48px}
+
+  .app-sec{font-size:.63rem;letter-spacing:3.5px;text-transform:uppercase;color:var(--dark);font-weight:700;display:flex;align-items:center;gap:12px;margin-bottom:20px;margin-top:32px}
+  .app-sec:first-of-type{margin-top:0}
+  .app-sec::after{content:'';flex:1;height:1px;background:#c8ddd4}
+
+  .app-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .app-full{grid-column:1/-1}
+  .app-field{display:flex;flex-direction:column;gap:5px}
+  .app-field label{font-size:.62rem;letter-spacing:2.5px;text-transform:uppercase;color:#74a98a;font-weight:700}
+  .app-field label .req{color:var(--gold);margin-left:2px}
+  .app-field input,.app-field select,.app-field textarea{border:none;border-bottom:1.5px solid #c8ddd4;padding:7px 2px;font-size:.88rem;color:var(--dark);font-family:'Lato',sans-serif;background:transparent;outline:none;transition:border-color .2s;width:100%}
+  .app-field input:focus,.app-field select:focus,.app-field textarea:focus{border-bottom-color:var(--gold)}
+  .app-field select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2374a98a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center}
+  .app-field textarea{resize:vertical;min-height:72px;line-height:1.6}
+
+  .app-check-group{display:flex;flex-direction:column;gap:10px;margin-top:2px}
+  .app-check-item{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:#3a5a47;cursor:pointer;line-height:1.45}
+  .app-check-item input[type=checkbox],.app-check-item input[type=radio]{appearance:none;width:16px;height:16px;border:1.5px solid #c8ddd4;border-radius:3px;flex-shrink:0;margin-top:1px;cursor:pointer;transition:all .15s;background:#fff}
+  .app-check-item input[type=radio]{border-radius:50%}
+  .app-check-item input[type=checkbox]:checked,.app-check-item input[type=radio]:checked{background:var(--dark);border-color:var(--dark);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline points='2,6 5,9 10,3' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:10px;background-repeat:no-repeat;background-position:center}
+  .app-check-item input[type=radio]:checked{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='3' fill='white'/%3E%3C/svg%3E")}
+  .app-radio-row{display:flex;flex-wrap:wrap;gap:20px}
+  .app-days-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+
+  .app-file-zone{border:2px dashed #c8ddd4;border-radius:4px;padding:24px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;position:relative}
+  .app-file-zone:hover,.app-file-zone.dragover{border-color:var(--gold);background:rgba(212,168,67,.05)}
+  .app-file-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+  .app-file-icon{font-size:1.6rem;margin-bottom:6px}
+  .app-file-main{font-size:.85rem;color:var(--dark);font-weight:600;margin-bottom:3px}
+  .app-file-sub{font-size:.75rem;color:#74a98a}
+  .app-file-name{margin-top:8px;font-size:.8rem;color:#2d6a4f;font-weight:600;display:none}
+
+  .app-disclaimer{background:var(--light);border-left:3px solid var(--gold);padding:14px 18px;font-size:.8rem;color:#3a5a47;line-height:1.7;margin-top:8px}
+  .app-disclaimer strong{color:var(--dark)}
+
+  .app-div{display:flex;align-items:center;gap:12px;margin:28px 0}
+  .app-div::before,.app-div::after{content:'';flex:1;height:1px}
+  .app-div::before{background:linear-gradient(to right,transparent,var(--gold))}
+  .app-div::after{background:linear-gradient(to left,transparent,var(--gold))}
+  .app-div span{color:var(--gold);font-size:1rem}
+
+  .app-submit-row{text-align:center;margin-top:8px}
+  .app-btn{padding:14px 52px;background:var(--dark);color:#fff;border:none;font-family:'Lato',sans-serif;font-size:.73rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;cursor:pointer;transition:background .2s}
+  .app-btn:hover{background:var(--gold);color:var(--dark)}
+  .app-btn:disabled{opacity:.5;cursor:not-allowed}
+  .app-status{margin-top:18px;padding:14px 20px;border-radius:4px;font-size:.85rem;text-align:center;display:none}
+  .app-status.success{background:#e6f4ee;color:var(--dark);border:1px solid #c8ddd4;display:block}
+  .app-status.error{background:#fdf0f0;color:#b94040;border:1px solid #f0c0c0;display:block}
+
+  .back-link{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:#74a98a;cursor:pointer;border:none;background:none;font-family:'Lato',sans-serif;font-weight:700;padding:0;margin-bottom:0}
+  .back-link:hover{color:var(--gold)}
+
+  @media(max-width:600px){
+    .app-grid{grid-template-columns:1fr}
+    .app-full{grid-column:1}
+    .app-body{padding:28px 22px}
+    .careers-title{font-size:2rem}
+    .app-radio-row{flex-direction:column;gap:10px}
+    .perks-row{flex-direction:column}
+    .perk{border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
+  }
+</style>
+
+<!-- Careers Hero -->
+<div class="careers-hero" style="padding-top:80px">
+  <div class="careers-band"></div>
+  <div class="careers-brand">Redeemed <span>&</span> Cleaned</div>
+  <div class="careers-title">Join <em>Our Team</em></div>
+  <div class="careers-sub">Now Hiring — Cleaning Professionals</div>
+  <div class="careers-desc">We're looking for reliable, detail-oriented people who take pride in their work and love leaving a space transformed. If that's you, we'd love to hear from you.</div>
+  <div class="careers-band-bot"></div>
+</div>
+
+<!-- Perks Bar -->
+<div class="perks-row">
+  <div class="perk"><div class="perk-icon">💰</div><div class="perk-label">Compensation</div><div class="perk-val">$18 – $22 / hr</div></div>
+  <div class="perk"><div class="perk-icon">🗓️</div><div class="perk-label">Schedule</div><div class="perk-val">Flexible Hours</div></div>
+  <div class="perk"><div class="perk-icon">📍</div><div class="perk-label">Coverage Area</div><div class="perk-val">Carlinville &amp; Surrounding</div></div>
+  <div class="perk"><div class="perk-icon">🤝</div><div class="perk-label">Environment</div><div class="perk-val">Supportive Team</div></div>
+</div>
+
+<!-- Application Form -->
+<div class="app-wrap">
+
+  <!-- Back link -->
+  <button class="back-link" onclick="showMain()" style="margin-bottom:20px">&#8592; Back to Main Site</button>
+
+  <div class="app-card">
+    <div class="app-card-band"></div>
+    <div class="app-body">
+      <form id="appForm" novalidate>
+
+        <div class="app-sec">Personal Information</div>
+        <div class="app-grid">
+          <div class="app-field" id="af-first"><label>First Name <span class="req">*</span></label><input type="text" name="first_name" placeholder="Jane" required></div>
+          <div class="app-field" id="af-last"><label>Last Name <span class="req">*</span></label><input type="text" name="last_name" placeholder="Smith" required></div>
+          <div class="app-field" id="af-email"><label>Email Address <span class="req">*</span></label><input type="email" name="app_email" placeholder="you@email.com" required></div>
+          <div class="app-field" id="af-phone"><label>Phone Number <span class="req">*</span></label><input type="tel" name="app_phone" placeholder="(217) 555-0100" required></div>
+          <div class="app-field app-full" id="af-address"><label>Street Address <span class="req">*</span></label><input type="text" name="app_address" placeholder="123 Main St, City, IL  62626" required></div>
+        </div>
+
+        <div class="app-sec">Legal Eligibility</div>
+        <div class="app-grid">
+          <div class="app-field app-full"><label>Are you legally authorized to work in the United States? <span class="req">*</span></label>
+            <div class="app-radio-row" style="margin-top:10px">
+              <label class="app-check-item"><input type="radio" name="work_auth" value="Yes" required> Yes, I am authorized to work in the U.S.</label>
+              <label class="app-check-item"><input type="radio" name="work_auth" value="No"> No</label>
+            </div>
+          </div>
+          <div class="app-field app-full"><label>Are you 18 years of age or older? <span class="req">*</span></label>
+            <div class="app-radio-row" style="margin-top:10px">
+              <label class="app-check-item"><input type="radio" name="age_18" value="Yes" required> Yes</label>
+              <label class="app-check-item"><input type="radio" name="age_18" value="No"> No</label>
+            </div>
+          </div>
+          <div class="app-field app-full"><label>Have you ever been convicted of a felony? <span class="req">*</span></label>
+            <div class="app-radio-row" style="margin-top:10px">
+              <label class="app-check-item"><input type="radio" name="felony" value="No"> No</label>
+              <label class="app-check-item"><input type="radio" name="felony" value="Yes"> Yes — a conviction does not automatically disqualify you</label>
+            </div>
+          </div>
+          <div class="app-field app-full"><label>Do you have a valid driver's license and reliable transportation? <span class="req">*</span></label>
+            <div class="app-radio-row" style="margin-top:10px">
+              <label class="app-check-item"><input type="radio" name="transportation" value="Yes" required> Yes</label>
+              <label class="app-check-item"><input type="radio" name="transportation" value="No"> No</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-sec">Availability &amp; Position</div>
+        <div class="app-grid">
+          <div class="app-field app-full"><label>What days are you generally available? <span class="req">*</span></label>
+            <div class="app-days-grid">
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Monday"> Monday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Tuesday"> Tuesday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Wednesday"> Wednesday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Thursday"> Thursday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Friday"> Friday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Saturday"> Saturday</label>
+              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Sunday"> Sunday</label>
+            </div>
+          </div>
+          <div class="app-field" id="af-hours"><label>Preferred hours per week <span class="req">*</span></label>
+            <select name="hours_week" required>
+              <option value="">Select…</option>
+              <option>Part-time (under 20 hrs)</option>
+              <option>Part-time (20–29 hrs)</option>
+              <option>Full-time (30+ hrs)</option>
+              <option>Flexible / As needed</option>
+            </select>
+          </div>
+          <div class="app-field" id="af-start"><label>Earliest available start date <span class="req">*</span></label><input type="date" name="start_date" required></div>
+        </div>
+
+        <div class="app-sec">Experience &amp; Background</div>
+        <div class="app-grid">
+          <div class="app-field app-full"><label>Do you have prior professional cleaning experience?</label>
+            <div class="app-radio-row" style="margin-top:10px">
+              <label class="app-check-item"><input type="radio" name="prior_exp" value="Yes"> Yes</label>
+              <label class="app-check-item"><input type="radio" name="prior_exp" value="No"> No</label>
+            </div>
+          </div>
+          <div class="app-field app-full"><label>If yes — briefly describe your experience</label><textarea name="exp_detail" placeholder="e.g. 2 years residential cleaning, familiar with move-out cleans…"></textarea></div>
+          <div class="app-field app-full"><label>How did you hear about this position?</label>
+            <select name="referral_src">
+              <option value="">Select…</option>
+              <option>Word of mouth / friend or family</option>
+              <option>Facebook</option>
+              <option>Google search</option>
+              <option>Indeed or job board</option>
+              <option>Our website</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="app-field app-full"><label>Anything else you'd like us to know?</label><textarea name="additional" placeholder="Optional — share anything relevant to your application…"></textarea></div>
+        </div>
+
+        <div class="app-sec">Résumé / References</div>
+        <div class="app-field app-full">
+          <label>Upload Résumé <span style="font-size:.65rem;color:#74a98a;font-style:italic;text-transform:none;letter-spacing:0">(optional — PDF, DOC, or DOCX · max 5 MB)</span></label>
+          <div class="app-file-zone" id="appFileZone">
+            <input type="file" id="appResumeFile" accept=".pdf,.doc,.docx">
+            <div class="app-file-icon">📄</div>
+            <div class="app-file-main">Click to browse or drag &amp; drop</div>
+            <div class="app-file-sub">PDF, DOC, or DOCX — up to 5 MB</div>
+            <div class="app-file-name" id="appFileName"></div>
+          </div>
+        </div>
+
+        <div class="app-disclaimer">
+          <strong>Equal Opportunity Statement:</strong> Redeemed &amp; Cleaned LLC is an equal opportunity employer and does not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other characteristic protected by law.
+        </div>
+
+        <div class="app-div"><span>&#10022;</span></div>
+
+        <div class="app-field app-full" style="margin-bottom:22px">
+          <label class="app-check-item" style="align-items:flex-start">
+            <input type="checkbox" id="appConsent" required style="margin-top:3px">
+            <span>I certify that the information provided is true and complete to the best of my knowledge. I consent to Redeemed &amp; Cleaned LLC retaining this application for consideration. <span class="req">*</span></span>
+          </label>
+        </div>
+
+        <div class="app-submit-row">
+          <button class="app-btn" type="submit" id="appSubmitBtn">Submit Application</button>
+          <div class="app-status" id="appStatusMsg"></div>
+        </div>
+
+      </form>
+    </div>
+    <div class="app-card-band-bot"></div>
+  </div>
+</div>
+
+  <footer>
+    <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
+    <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
+    <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
+    <button onclick="showMain()" style="margin-top:14px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(212,168,67,0.35);padding:6px 18px;border-radius:3px;cursor:pointer;font-family:'Lato',sans-serif">&#8592; Back to Main Site</button>
+  </footer>
+
+</div><!-- end #careersPage -->
+
+<script>
+  // ── Page switching ──────────────────────────────────────────
+  var mainEls = ['home','about','pricing','addons','contact','mainFooter'];
+
+  function showCareers(){
+    mainEls.forEach(function(id){ var el=document.getElementById(id); if(el) el.style.display='none'; });
+    document.getElementById('careersPage').style.display='block';
+    window.scrollTo(0,0);
+  }
+
+  function showMain(){
+    document.getElementById('careersPage').style.display='none';
+    mainEls.forEach(function(id){ var el=document.getElementById(id); if(el) el.style.display=''; });
+    window.scrollTo(0,0);
+  }
+
+  // ── Careers form ────────────────────────────────────────────
+  var appZone = document.getElementById('appFileZone');
+  var appFileInput = document.getElementById('appResumeFile');
+  var appFileNameEl = document.getElementById('appFileName');
+
+  appZone.addEventListener('dragover',function(e){e.preventDefault();appZone.classList.add('dragover');});
+  appZone.addEventListener('dragleave',function(){appZone.classList.remove('dragover');});
+  appZone.addEventListener('drop',function(e){e.preventDefault();appZone.classList.remove('dragover');if(e.dataTransfer.files[0]){appFileInput.files=e.dataTransfer.files;showAppFileName();}});
+  appFileInput.addEventListener('change',showAppFileName);
+
+  function showAppFileName(){
+    var f=appFileInput.files[0];
+    if(!f)return;
+    if(f.size>5*1024*1024){alert('File is larger than 5 MB. Please choose a smaller file.');appFileInput.value='';appFileNameEl.style.display='none';return;}
+    appFileNameEl.textContent='✓ '+f.name;
+    appFileNameEl.style.display='block';
+  }
+
+  function getChecked(name){
+    return Array.from(document.querySelectorAll('input[name="'+name+'"]:checked')).map(function(el){return el.value;}).join(', ')||'None selected';
+  }
+  function getRadio(name){
+    var el=document.querySelector('input[name="'+name+'"]:checked');
+    return el?el.value:'Not answered';
+  }
+  function getVal(name){
+    var el=document.querySelector('[name="'+name+'"]');
+    return el?el.value.trim():'';
+  }
+  function toBase64(file){
+    return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(r.result.split(',')[1]);};r.onerror=rej;r.readAsDataURL(file);});
+  }
+  function nowStr(){return new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});}
+
+  document.getElementById('appForm').addEventListener('submit',async function(e){
+    e.preventDefault();
+    var ok=true;
+    if(!getVal('first_name'))ok=false;
+    if(!getVal('last_name'))ok=false;
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getVal('app_email')))ok=false;
+    if(getVal('app_phone').length<7)ok=false;
+    if(!getVal('app_address'))ok=false;
+    if(!getVal('hours_week'))ok=false;
+    if(!getVal('start_date'))ok=false;
+    if(!document.getElementById('appConsent').checked)ok=false;
+
+    var statusEl=document.getElementById('appStatusMsg');
+    if(!ok){
+      statusEl.className='app-status error';
+      statusEl.textContent='Please complete all required fields before submitting.';
+      statusEl.style.display='block';
+      return;
+    }
+
+    var btn=document.getElementById('appSubmitBtn');
+    btn.disabled=true;btn.textContent='Sending…';
+    statusEl.style.display='none';
+
+    var params={
+      applicant_name:getVal('first_name')+' '+getVal('last_name'),
+      first_name:getVal('first_name'),
+      last_name:getVal('last_name'),
+      email:getVal('app_email'),
+      phone:getVal('app_phone'),
+      address:getVal('app_address'),
+      work_auth:getRadio('work_auth'),
+      age_18:getRadio('age_18'),
+      felony:getRadio('felony'),
+      transportation:getRadio('transportation'),
+      avail_days:getChecked('avail_days'),
+      hours_week:getVal('hours_week'),
+      start_date:getVal('start_date'),
+      prior_exp:getRadio('prior_exp'),
+      exp_detail:getVal('exp_detail')||'N/A',
+      referral:getVal('referral_src')||'Not specified',
+      additional:getVal('additional')||'N/A',
+      submitted_at:nowStr(),
+      reply_to:getVal('app_email'),
+      has_resume:'No résumé uploaded',
+      resume_name:'None'
+    };
+
+    var resumeFile=appFileInput.files[0];
+    if(resumeFile){
+      try{
+        var b64=await toBase64(resumeFile);
+        params.resume_name=resumeFile.name;
+        params.resume_data=b64;
+        params.has_resume='Yes — see attachment';
+      }catch(err){params.has_resume='File could not be attached';}
+    }
+
+    try{
+      await emailjs.send('service_qd4csnq','template_5emaxh8',params);
+      statusEl.className='app-status success';
+      statusEl.textContent='✓ Your application has been submitted! We\'ll be in touch soon.';
+      statusEl.style.display='block';
+      document.getElementById('appForm').reset();
+      appFileNameEl.style.display='none';
+    }catch(err){
+      statusEl.className='app-status error';
+      statusEl.textContent='Something went wrong. Please email us directly at alissahicks@redeemedandcleaned.com.';
+      statusEl.style.display='block';
+    }
+    btn.disabled=false;btn.textContent='Submit Application';
+  });
 </script>
 </body>
 </html>
