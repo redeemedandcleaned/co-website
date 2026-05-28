@@ -510,8 +510,7 @@
       },function(err){
         btn.disabled=false;
         btn.textContent='Send My Quote Request';
-        var errDetail = err && (err.text || err.message || JSON.stringify(err)) || 'Unknown error';
-        document.getElementById('errorMsg').textContent='Something went wrong: ' + errDetail;
+        document.getElementById('errorMsg').textContent='Something went wrong. Please email us directly at alissahicks@redeemedandcleaned.com.';
         document.getElementById('errorMsg').style.display='block';
         console.error('EmailJS quote error:', err);
       });
