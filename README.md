@@ -774,6 +774,9 @@
 </div><!-- end #careersPage -->
 
 <script>
+  // ── EmailJS init (careers form) ─────────────────────────────
+  emailjs.init({publicKey:'O06yzWAZebWqid3hP'});
+
   // ── Page switching ──────────────────────────────────────────
   var mainEls = ['home','about','pricing','addons','contact','mainFooter'];
 
