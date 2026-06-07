@@ -234,7 +234,7 @@
       </div>
 
       <div class="price-card popular">
-        <div class="popular-badge">Most Popular</div>
+        <div class="popular-badge">Most Popular &middot; Recommended Start</div>
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
         </div>
@@ -243,7 +243,7 @@
         <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
         <div class="price-note">Per visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
-        <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. Ideal for first-time clients, seasonal refreshes, or homes needing extra attention.</p>
+        <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. <strong style="color:var(--dark)">We recommend starting here</strong> — it gives us a full picture of your home so every future visit is faster and more efficient.</p>
         <ul class="price-includes">
           <li>Everything in The Grace Clean</li>
           <li>Inside oven &amp; microwave</li>
@@ -377,8 +377,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label>Bedrooms</label>
-              <select id="bedrooms">
+              <label>Bedrooms *</label>
+              <select id="bedrooms" required>
                 <option value="">Select</option>
                 <option>1</option><option>2</option><option>3</option>
                 <option>4</option><option>5</option><option>6+</option>
@@ -387,8 +387,8 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Bathrooms</label>
-              <select id="bathrooms">
+              <label>Bathrooms *</label>
+              <select id="bathrooms" required>
                 <option value="">Select</option>
                 <option>1</option><option>2</option><option>3</option>
                 <option>4</option><option>5</option>
@@ -406,7 +406,7 @@
           </div>
           <div class="form-group">
             <label>Service Interested In *</label>
-            <select id="service" required>
+            <select id="service" required onchange="handleServiceChange()">
               <option value="">Select a service</option>
               <option>The Grace Clean — Maintenance ($75–$150)</option>
               <option>The Redeemed Clean — Deep Refresh ($180–$300)</option>
@@ -414,6 +414,10 @@
               <option>Move-In / Move-Out Clean ($250–$500)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
+          </div>
+          <div class="form-group" id="focusAreasGroup" style="display:none">
+            <label>Organization Focus Areas *</label>
+            <textarea id="focusAreas" placeholder="e.g. master bedroom closet, kitchen pantry, kids' rooms, garage — tell us where you'd like to start"></textarea>
           </div>
           <div class="form-group">
             <label>How Often?</label>
@@ -429,8 +433,8 @@
           <div class="form-group">
             <label>Optional Add-Ons</label>
             <div class="checkbox-group">
-              <label><input type="checkbox" class="addon" value="Interior Windows (+$25)"> Interior Windows (+$25)</label>
-              <label><input type="checkbox" class="addon" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
+              <label><input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$25)"> Interior Windows (+$25)</label>
+              <label><input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
               <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30)</label>
               <label><input type="checkbox" class="addon" value="Single Room Organization (+$50)"> Single Room Organization (+$50)</label>
               <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
@@ -476,6 +480,22 @@
     m.style.display=m.style.display==='block'?'none':'block';
   }
 
+  function handleServiceChange(){
+    var val = document.getElementById('service').value;
+    var isRedeemed = val.indexOf('Redeemed Clean') !== -1;
+    var isRestored = val.indexOf('Restored Home') !== -1;
+
+    // Auto-check included add-ons for Redeemed Clean
+    document.getElementById('addonWindows').checked = isRedeemed;
+    document.getElementById('addonOven').checked = isRedeemed;
+
+    // Show/hide Organization Focus Areas for Restored Home
+    var focusGroup = document.getElementById('focusAreasGroup');
+    var focusField = document.getElementById('focusAreas');
+    focusGroup.style.display = isRestored ? 'block' : 'none';
+    focusField.required = isRestored;
+  }
+
   function submitForm(e){
     e.preventDefault();
     var btn=document.getElementById('submitBtn');
@@ -499,6 +519,7 @@
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
       notes:document.getElementById('notes').value||'None',
+      focus_areas:document.getElementById('focusAreas').value||'N/A',
       referral:document.getElementById('referral').value||'Not provided'
     };
 
