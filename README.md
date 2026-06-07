@@ -93,14 +93,12 @@
   .addon-desc{font-size:0.72rem;color:var(--muted)}
   .addon-price{font-size:1rem;font-weight:700;color:var(--gold);white-space:nowrap;margin-left:12px}
 
-  .recurring-section{margin-top:60px;background:#1b4332;border-radius:10px;padding:40px;text-align:center}
-  .recurring-section h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:8px}
-  .recurring-section p{color:rgba(255,255,255,0.65);font-size:0.85rem;margin-bottom:28px}
-  .recurring-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:700px;margin:0 auto}
-  .rec-card{background:rgba(255,255,255,0.07);border-radius:6px;padding:18px 12px;text-align:center}
-  .rec-card strong{display:block;font-size:1.3rem;color:var(--gold);margin-bottom:4px}
-  .rec-card em{display:block;color:var(--white);font-style:normal;font-size:0.82rem;font-weight:600;margin-bottom:2px}
-  .rec-card span{color:rgba(255,255,255,0.5);font-size:0.72rem}
+  .referral-section{margin-top:60px;background:#1b4332;border-radius:10px;padding:40px;text-align:center}
+  .referral-section h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:8px}
+  .referral-section p{color:rgba(255,255,255,0.65);font-size:0.85rem;margin-bottom:28px;max-width:560px;margin-left:auto;margin-right:auto}
+  .referral-detail{background:rgba(255,255,255,0.07);border-radius:6px;padding:22px 28px;max-width:520px;margin:0 auto;text-align:left}
+  .referral-detail p{color:rgba(255,255,255,0.8);font-size:0.85rem;line-height:1.8;margin-bottom:0}
+  .referral-detail strong{color:var(--gold)}
 
   #contact{background:var(--white)}
   .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
@@ -221,8 +219,8 @@
         </div>
         <div class="price-name">The Grace Clean</div>
         <div class="price-tag-line">Essential Maintenance</div>
-        <div class="price-amount"><sup>$</sup>60 <small>– $100</small></div>
-        <div class="price-note">Per visit &middot; up to 1,500 sq ft</div>
+        <div class="price-amount"><sup>$</sup>75 <small>– $150</small></div>
+        <div class="price-note">Per visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
         <p class="price-desc">A faithful, consistent clean for homes that need regular upkeep. Perfect for weekly or biweekly clients who want a fresh, tidy home maintained with care and reliability.</p>
         <ul class="price-includes">
@@ -242,8 +240,8 @@
         </div>
         <div class="price-name">The Redeemed Clean</div>
         <div class="price-tag-line">Deep Refresh</div>
-        <div class="price-amount"><sup>$</sup>140 <small>– $220</small></div>
-        <div class="price-note">Per visit &middot; up to 2,000 sq ft</div>
+        <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
+        <div class="price-note">Per visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
         <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. Ideal for first-time clients, seasonal refreshes, or homes needing extra attention.</p>
         <ul class="price-includes">
@@ -272,6 +270,7 @@
           <li>Organized storage &amp; categorized systems</li>
           <li>Kitchen pantry or cabinet overhaul</li>
           <li>Before &amp; after photo documentation</li>
+          <li>Note: Client provides any storage solutions</li>
         </ul>
       </div>
 
@@ -281,8 +280,8 @@
         </div>
         <div class="price-name">Move-In / Move-Out</div>
         <div class="price-tag-line">Fresh Start Clean</div>
-        <div class="price-amount"><sup>$</sup>200 <small>– $350</small></div>
-        <div class="price-note">Flat rate &middot; based on sq ft</div>
+        <div class="price-amount"><sup>$</sup>250 <small>– $500</small></div>
+        <div class="price-note">Flat rate &middot; up to 4,000 sq ft &middot; 4 bed / 3 bath</div>
         <div class="price-divider"></div>
         <p class="price-desc">Starting fresh or leaving well — this package ensures every inch is spotless for the next chapter. Great for renters, homeowners, and local landlords beginning or ending a lease.</p>
         <ul class="price-includes">
@@ -290,7 +289,8 @@
           <li>Inside all cabinets, drawers &amp; closets</li>
           <li>Appliances cleaned inside &amp; out</li>
           <li>Walls spot-cleaned &amp; baseboards detailed</li>
-          <li>Garage sweep (if applicable)</li>
+          <li>Garage sweep — single garage included</li>
+          <li>Additional garage +$20 each</li>
           <li>Bathroom &amp; kitchen sanitized thoroughly</li>
           <li>Certificate of clean available on request</li>
         </ul>
@@ -298,14 +298,11 @@
 
     </div>
 
-    <div class="recurring-section">
-      <h3>Recurring Client Savings</h3>
-      <p>Commit to regular service and save on every visit.</p>
-      <div class="recurring-grid">
-        <div class="rec-card"><strong>5% off</strong><em>Monthly</em><span>1&times; per month</span></div>
-        <div class="rec-card"><strong>10% off</strong><em>Biweekly</em><span>2&times; per month</span></div>
-        <div class="rec-card"><strong>15% off</strong><em>Weekly</em><span>Every week</span></div>
-        <div class="rec-card"><strong>$20 off</strong><em>Referral</em><span>Per new client referred</span></div>
+    <div class="referral-section">
+      <h3>Refer a Friend &amp; Save</h3>
+      <p>Know someone who could use a clean, restored home? Send them our way — and we'll take care of both of you.</p>
+      <div class="referral-detail">
+        <p>When you refer a new client, <strong>you receive $20 off</strong> your next cleaning. Your friend just needs to include <strong>your name</strong> in their quote request online so we can make sure you get the credit.</p>
       </div>
     </div>
   </div>
@@ -374,7 +371,9 @@
                 <option>1,000 – 1,500 sq ft</option>
                 <option>1,500 – 2,000 sq ft</option>
                 <option>2,000 – 2,500 sq ft</option>
-                <option>2,500+ sq ft</option>
+                <option>2,500 – 3,000 sq ft</option>
+                <option>3,000 – 4,000 sq ft</option>
+                <option>4,000+ sq ft</option>
               </select>
             </div>
             <div class="form-group">
@@ -409,10 +408,10 @@
             <label>Service Interested In *</label>
             <select id="service" required>
               <option value="">Select a service</option>
-              <option>The Grace Clean — Maintenance ($60–$100)</option>
-              <option>The Redeemed Clean — Deep Refresh ($140–$220)</option>
+              <option>The Grace Clean — Maintenance ($75–$150)</option>
+              <option>The Redeemed Clean — Deep Refresh ($180–$300)</option>
               <option>The Restored Home — Organization ($180–$300)</option>
-              <option>Move-In / Move-Out Clean ($200–$350)</option>
+              <option>Move-In / Move-Out Clean ($250–$500)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
           </div>
@@ -444,8 +443,8 @@
             <textarea id="notes" placeholder="Allergies, sensitivities, areas of focus, access instructions..."></textarea>
           </div>
           <div class="form-group">
-            <label>How Did You Hear About Us?</label>
-            <input type="text" id="referral" placeholder="e.g. referred by a friend, Facebook, word of mouth...">
+            <label>Referred by a Client? Enter Their Name</label>
+            <input type="text" id="referral" placeholder="First and last name of the person who referred you">
           </div>
           <button type="submit" class="form-submit" id="submitBtn">Send My Quote Request</button>
           <p class="form-note">We'll be in touch with you promptly. No spam, ever.</p>
