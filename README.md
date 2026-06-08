@@ -122,6 +122,9 @@
   .checkbox-group{display:flex;flex-direction:column;gap:8px;background:var(--white);border:1px solid #ddd6cc;border-radius:4px;padding:14px}
   .checkbox-group label{font-size:0.82rem;letter-spacing:0;text-transform:none;font-weight:400;display:flex;align-items:center;gap:8px;cursor:pointer;color:var(--text)}
   .checkbox-group label input[type=checkbox]{width:15px;height:15px;accent-color:var(--gold);flex-shrink:0}
+  .addon-included-label{display:flex;align-items:center;gap:8px;font-size:0.82rem;color:#aaa;cursor:default;pointer-events:none}
+  .addon-included-label input[type=checkbox]{width:15px;height:15px;flex-shrink:0;accent-color:#ccc}
+  .addon-included-tag{font-size:0.7rem;color:var(--gold);font-style:italic;font-weight:600;margin-left:4px}
   .form-submit{width:100%;padding:14px;background:var(--dark);color:var(--white);border:none;border-radius:4px;font-size:0.75rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;cursor:pointer;transition:.2s;font-family:'Lato',sans-serif;margin-top:6px}
   .form-submit:hover{background:var(--gold)}
   .form-submit:disabled{background:#ccc;cursor:not-allowed}
@@ -315,10 +318,10 @@
     <div class="divider-gold"><span>&#10022;</span></div>
     <p class="section-sub" style="margin-bottom:32px">Enhance any package with these individual add-on services. Just check them off when you submit your request.</p>
     <div class="addons-grid">
-      <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside</div></div><div class="addon-price">+$25</div></div>
+      <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside</div></div><div class="addon-price">+$50</div></div>
       <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$30</div></div>
       <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
-      <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down</div></div><div class="addon-price">+$30</div></div>
+      <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down — excludes freezer</div></div><div class="addon-price">+$30</div></div>
       <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, or bedroom</div></div><div class="addon-price">+$50</div></div>
       <div class="addon-card"><div><div class="addon-name">Patio / Porch Sweep</div><div class="addon-desc">Sweep, wipe furniture &amp; tidy</div></div><div class="addon-price">+$20</div></div>
       <div class="addon-card"><div><div class="addon-name">Laundry — Fold &amp; Organize</div><div class="addon-desc">Fold and organize one full load</div></div><div class="addon-price">+$30</div></div>
@@ -433,9 +436,9 @@
           <div class="form-group">
             <label>Optional Add-Ons</label>
             <div class="checkbox-group">
-              <label><input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$25)"> Interior Windows (+$25)</label>
-              <label><input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
-              <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30)</label>
+              <label id="labelWindows"><input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50)"> Interior Windows (+$50)</label>
+              <label id="labelOven"><input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
+              <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30) <span style="font-size:0.72rem;color:var(--muted);font-style:italic">— excludes freezer</span></label>
               <label><input type="checkbox" class="addon" value="Single Room Organization (+$50)"> Single Room Organization (+$50)</label>
               <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
               <label><input type="checkbox" class="addon" value="Laundry Fold & Organize (+$30)"> Laundry — Fold &amp; Organize (+$30)</label>
@@ -485,9 +488,25 @@
     var isRedeemed = val.indexOf('Redeemed Clean') !== -1;
     var isRestored = val.indexOf('Restored Home') !== -1;
 
-    // Auto-check included add-ons for Redeemed Clean
-    document.getElementById('addonWindows').checked = isRedeemed;
-    document.getElementById('addonOven').checked = isRedeemed;
+    // Grey out included add-ons for Redeemed Clean, restore when not selected
+    var winCb = document.getElementById('addonWindows');
+    var ovenCb = document.getElementById('addonOven');
+    var winLabel = document.getElementById('labelWindows');
+    var ovenLabel = document.getElementById('labelOven');
+
+    if(isRedeemed){
+      winCb.checked = false; winCb.disabled = true;
+      ovenCb.checked = false; ovenCb.disabled = true;
+      winLabel.className = 'addon-included-label';
+      winLabel.innerHTML = '<input type="checkbox" disabled> Interior Windows <span class="addon-included-tag">✓ Included</span>';
+      ovenLabel.className = 'addon-included-label';
+      ovenLabel.innerHTML = '<input type="checkbox" disabled> Oven Deep Clean <span class="addon-included-tag">✓ Included</span>';
+    } else {
+      winLabel.className = '';
+      winLabel.innerHTML = '<input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50)"> Interior Windows (+$50)';
+      ovenLabel.className = '';
+      ovenLabel.innerHTML = '<input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)';
+    }
 
     // Show/hide Organization Focus Areas for Restored Home
     var focusGroup = document.getElementById('focusAreasGroup');
