@@ -541,7 +541,6 @@
       focus_areas:(document.getElementById('focusAreas').value||'').trim()||'N/A',
       referral:document.getElementById('referral').value||'Not provided'
     };
-    if(userEmail) params.reply_to = userEmail;
 
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
       .then(function(){
