@@ -538,7 +538,7 @@
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
       notes:document.getElementById('notes').value||'None',
-      focus_areas:document.getElementById('focusAreas').value||'N/A',
+      focus_areas:(document.getElementById('focusAreas').value||'').trim()||'N/A',
       referral:document.getElementById('referral').value||'Not provided'
     };
 
