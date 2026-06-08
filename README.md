@@ -362,7 +362,7 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label>Phone *</label><input type="tel" id="phone" required placeholder="(555) 000-0000"></div>
-            <div class="form-group"><label>Email</label><input type="email" id="email" placeholder="jane@email.com"></div>
+            <div class="form-group"><label>Email *</label><input type="email" id="email" required placeholder="jane@email.com"></div>
           </div>
           <div class="form-group"><label>Your Address / City *</label><input type="text" id="address" required placeholder="123 Main St, Your Town"></div>
           <div class="form-row">
@@ -541,6 +541,7 @@
       focus_areas:(document.getElementById('focusAreas').value||'').trim()||'N/A',
       referral:document.getElementById('referral').value||'Not provided'
     };
+    if(userEmail) params.reply_to = userEmail;
 
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
       .then(function(){
