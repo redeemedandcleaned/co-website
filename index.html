@@ -134,6 +134,16 @@
   .success-msg p{font-size:0.85rem;color:#5a7a65;line-height:1.7}
   .error-msg{display:none;background:#fff0f0;border:1px solid #f5c1c1;border-radius:6px;padding:16px;text-align:center;margin-top:12px;font-size:0.82rem;color:#a33}
 
+  /* Single Room Organization sub-fields */
+  .org-sub-fields{background:var(--white);border:1px solid #ddd6cc;border-radius:4px;padding:14px 16px;margin-top:10px;display:none}
+  .org-sub-fields .org-label{font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;margin-bottom:6px;margin-top:12px;display:block}
+  .org-sub-fields .org-label:first-child{margin-top:0}
+  .org-scheduling-note{font-size:0.75rem;color:#b07a10;background:#fdf6e3;border:1px solid #f0d98a;border-radius:4px;padding:9px 12px;margin-top:10px;line-height:1.6;font-style:italic}
+  .room-rows{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+  .room-row{display:grid;grid-template-columns:80px 1fr;gap:8px;align-items:center}
+  .room-row label{font-size:0.75rem;letter-spacing:0;text-transform:none;font-weight:600;color:var(--text);margin:0}
+  .room-row select{padding:7px 10px;font-size:0.82rem}
+
   footer{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:36px 5%}
   .foot-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
   .foot-logo span{font-style:italic;color:var(--gold)}
@@ -258,27 +268,6 @@
 
       <div class="price-card">
         <div class="price-icon">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-        </div>
-        <div class="price-name">The Restored Home</div>
-        <div class="price-tag-line">Organization &amp; Declutter</div>
-        <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
-        <div class="price-note">Per session &middot; 3–5 hours</div>
-        <div class="price-divider"></div>
-        <p class="price-desc">More than clean — this is a full reset. We bring peace and order to overwhelmed spaces, helping families reclaim their home through thoughtful decluttering and intentional organization.</p>
-        <ul class="price-includes">
-          <li>Full room organization (closets, pantry, etc.)</li>
-          <li>Decluttering &amp; sorting system</li>
-          <li>Donation bag prep &amp; coordination</li>
-          <li>Organized storage &amp; categorized systems</li>
-          <li>Kitchen pantry or cabinet overhaul</li>
-          <li>Before &amp; after photo documentation</li>
-          <li>Note: Client provides any storage solutions</li>
-        </ul>
-      </div>
-
-      <div class="price-card">
-        <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M10 22v-6h4v6"/></svg>
         </div>
         <div class="price-name">Move-In / Move-Out</div>
@@ -318,11 +307,11 @@
     <div class="divider-gold"><span>&#10022;</span></div>
     <p class="section-sub" style="margin-bottom:32px">Enhance any package with these individual add-on services. Just check them off when you submit your request.</p>
     <div class="addons-grid">
-      <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside</div></div><div class="addon-price">+$50</div></div>
+      <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside — pricing based on window count</div></div><div class="addon-price">+$50–$150</div></div>
       <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$30</div></div>
       <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
       <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down — excludes freezer</div></div><div class="addon-price">+$30</div></div>
-      <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, or bedroom</div></div><div class="addon-price">+$50</div></div>
+      <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, bedroom, or kitchen — pricing based on size</div></div><div class="addon-price">+$50–$150</div></div>
       <div class="addon-card"><div><div class="addon-name">Patio / Porch Sweep</div><div class="addon-desc">Sweep, wipe furniture &amp; tidy</div></div><div class="addon-price">+$20</div></div>
       <div class="addon-card"><div><div class="addon-name">Laundry — Fold &amp; Organize</div><div class="addon-desc">Fold and organize one full load</div></div><div class="addon-price">+$30</div></div>
     </div>
@@ -413,14 +402,9 @@
               <option value="">Select a service</option>
               <option>The Grace Clean — Maintenance ($75–$150)</option>
               <option>The Redeemed Clean — Deep Refresh ($180–$300)</option>
-              <option>The Restored Home — Organization ($180–$300)</option>
               <option>Move-In / Move-Out Clean ($250–$500)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
-          </div>
-          <div class="form-group" id="focusAreasGroup" style="display:none">
-            <label>Organization Focus Areas *</label>
-            <textarea id="focusAreas" placeholder="e.g. master bedroom closet, kitchen pantry, kids' rooms, garage — tell us where you'd like to start"></textarea>
           </div>
           <div class="form-group">
             <label>How Often?</label>
@@ -436,14 +420,57 @@
           <div class="form-group">
             <label>Optional Add-Ons</label>
             <div class="checkbox-group">
-              <label id="labelWindows"><input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50)"> Interior Windows (+$50)</label>
+              <label id="labelWindows"><input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50–$150)" onchange="handleWinAddonChange()"> Interior Windows (+$50–$150)</label>
+              <!-- Windows sub-fields -->
+              <div class="org-sub-fields" id="winSubFields">
+                <span class="org-label">Number of Windows</span>
+                <select id="winCount">
+                  <option value="">Select window count</option>
+                  <option>Small — under 10 windows (+$50)</option>
+                  <option>Medium — 10–20 windows (+$100)</option>
+                  <option>Large — more than 20 windows (+$150)</option>
+                </select>
+              </div>
               <label id="labelOven"><input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
               <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30) <span style="font-size:0.72rem;color:var(--muted);font-style:italic">— excludes freezer</span></label>
-              <label><input type="checkbox" class="addon" value="Single Room Organization (+$50)"> Single Room Organization (+$50)</label>
+              <label id="labelOrgAddon"><input type="checkbox" class="addon" id="addonOrg" value="Single Room Organization (+$50–$150)" onchange="handleOrgAddonChange()"> Single Room Organization (+$50–$150)</label>
+              <!-- Organization sub-fields -->
+              <div class="org-sub-fields" id="orgSubFields">
+                <span class="org-label">Space Size (per room)</span>
+                <select id="orgSqft">
+                  <option value="">Select size range</option>
+                  <option>Small — under 50 sq ft (e.g. small closet, pantry)</option>
+                  <option>Medium — 50–150 sq ft (e.g. large closet, small bedroom)</option>
+                  <option>Large — 150–300 sq ft (e.g. master bedroom, kitchen)</option>
+                  <option>Extra Large — 300+ sq ft (e.g. large open space)</option>
+                </select>
+                <span class="org-label" style="margin-top:12px">Number of Rooms</span>
+                <select id="orgRoomCount" onchange="buildRoomRows()">
+                  <option value="">Select number</option>
+                  <option value="1">1 room</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                </select>
+                <div class="room-rows" id="roomRows"></div>
+                <div class="org-scheduling-note">&#9432; Note: Cleaning and room organization services may be scheduled at separate times.</div>
+              </div>
               <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
               <label><input type="checkbox" class="addon" value="Laundry Fold & Organize (+$30)"> Laundry — Fold &amp; Organize (+$30)</label>
             </div>
             <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows and Oven Deep Clean are included with The Redeemed Clean — no need to select them separately.</p>
+            <!-- Shown only when Redeemed Clean is selected -->
+            <div id="redeemedWinCountGroup" style="display:none;margin-top:12px">
+              <label style="font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;display:block;margin-bottom:6px">Number of Windows <span style="color:var(--gold)">*</span></label>
+              <select id="redeemedWinCount" style="border:1px solid #ddd6cc;border-radius:4px;padding:11px 14px;font-size:0.85rem;width:100%">
+                <option value="">Select window count</option>
+                <option>Small — under 10 windows</option>
+                <option>Medium — 10–20 windows</option>
+                <option>Large — more than 20 windows</option>
+              </select>
+              <p style="font-size:0.72rem;color:#b07a10;margin-top:6px;font-style:italic">Interior window cleaning is included with The Redeemed Clean — we just need to know how many windows to plan your visit.</p>
+            </div>
           </div>
           <div class="form-group">
             <label>Special Instructions / Notes</label>
@@ -486,9 +513,7 @@
   function handleServiceChange(){
     var val = document.getElementById('service').value;
     var isRedeemed = val.indexOf('Redeemed Clean') !== -1;
-    var isRestored = val.indexOf('Restored Home') !== -1;
 
-    // Grey out included add-ons for Redeemed Clean, restore when not selected
     var winCb = document.getElementById('addonWindows');
     var ovenCb = document.getElementById('addonOven');
     var winLabel = document.getElementById('labelWindows');
@@ -497,22 +522,63 @@
     if(isRedeemed){
       winCb.checked = false; winCb.disabled = true;
       ovenCb.checked = false; ovenCb.disabled = true;
+      var winSub = document.getElementById('winSubFields');
+      if(winSub){ winSub.style.display='none'; document.getElementById('winCount').value=''; }
       winLabel.className = 'addon-included-label';
       winLabel.innerHTML = '<input type="checkbox" disabled> Interior Windows <span class="addon-included-tag">✓ Included</span>';
       ovenLabel.className = 'addon-included-label';
       ovenLabel.innerHTML = '<input type="checkbox" disabled> Oven Deep Clean <span class="addon-included-tag">✓ Included</span>';
+      document.getElementById('redeemedWinCountGroup').style.display = 'block';
     } else {
       winLabel.className = '';
-      winLabel.innerHTML = '<input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50)"> Interior Windows (+$50)';
+      winLabel.innerHTML = '<input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50–$150)" onchange="handleWinAddonChange()"> Interior Windows (+$50–$150)';
       ovenLabel.className = '';
       ovenLabel.innerHTML = '<input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)';
+      document.getElementById('redeemedWinCountGroup').style.display = 'none';
+      document.getElementById('redeemedWinCount').value = '';
     }
+  }
 
-    // Show/hide Organization Focus Areas for Restored Home
-    var focusGroup = document.getElementById('focusAreasGroup');
-    var focusField = document.getElementById('focusAreas');
-    focusGroup.style.display = isRestored ? 'block' : 'none';
-    focusField.required = isRestored;
+  function handleWinAddonChange(){
+    var cb = document.getElementById('addonWindows');
+    var sub = document.getElementById('winSubFields');
+    if(!cb || !sub) return;
+    sub.style.display = cb.checked ? 'block' : 'none';
+    if(!cb.checked){ document.getElementById('winCount').value = ''; }
+  }
+
+  function handleOrgAddonChange(){
+    var cb = document.getElementById('addonOrg');
+    var sub = document.getElementById('orgSubFields');
+    sub.style.display = cb.checked ? 'block' : 'none';
+    if(!cb.checked){
+      document.getElementById('orgSqft').value = '';
+      document.getElementById('orgRoomCount').value = '';
+      document.getElementById('roomRows').innerHTML = '';
+    }
+  }
+
+  var roomTypeOptions = ['Pantry','Closet','Bedroom','Kitchen Cabinets','Bathroom','Other'];
+
+  function buildRoomRows(){
+    var count = parseInt(document.getElementById('orgRoomCount').value) || 0;
+    var container = document.getElementById('roomRows');
+    container.innerHTML = '';
+    for(var i = 1; i <= count; i++){
+      var row = document.createElement('div');
+      row.className = 'room-row';
+      var lbl = document.createElement('label');
+      lbl.textContent = 'Room ' + i + ':';
+      var sel = document.createElement('select');
+      sel.id = 'roomType_' + i;
+      sel.innerHTML = '<option value="">Select type</option>';
+      roomTypeOptions.forEach(function(opt){
+        sel.innerHTML += '<option value="'+opt+'">'+opt+'</option>';
+      });
+      row.appendChild(lbl);
+      row.appendChild(sel);
+      container.appendChild(row);
+    }
   }
 
   function submitForm(e){
@@ -523,6 +589,36 @@
 
     var addons=[];
     document.querySelectorAll('.addon:checked').forEach(function(c){addons.push(c.value);});
+
+    // Gather org sub-field data
+    var orgSelected = document.getElementById('addonOrg') && document.getElementById('addonOrg').checked;
+    var orgSqft = orgSelected ? (document.getElementById('orgSqft').value || 'Not specified') : '';
+    var orgRoomCount = '';
+    var orgRoomTypes = '';
+    if(orgSelected){
+      var countVal = document.getElementById('orgRoomCount').value;
+      orgRoomCount = countVal || 'Not specified';
+      var count = parseInt(countVal) || 0;
+      var types = [];
+      for(var i = 1; i <= count; i++){
+        var sel = document.getElementById('roomType_' + i);
+        types.push('Room ' + i + ': ' + (sel && sel.value ? sel.value : 'Not specified'));
+      }
+      orgRoomTypes = types.length ? types.join(' | ') : 'Not specified';
+    }
+
+    // Gather windows sub-field data — check addon checkbox path OR Redeemed Clean included path
+    var winChecked = document.getElementById('addonWindows') && document.getElementById('addonWindows').checked;
+    var redeemedWinEl = document.getElementById('redeemedWinCount');
+    var redeemedWinVisible = document.getElementById('redeemedWinCountGroup').style.display === 'block';
+    var winCountVal;
+    if(redeemedWinVisible){
+      winCountVal = redeemedWinEl.value || 'Not specified';
+    } else if(winChecked){
+      winCountVal = document.getElementById('winCount').value || 'Not specified';
+    } else {
+      winCountVal = 'N/A';
+    }
 
     var params={
       to_email:'alissahicks@redeemedandcleaned.com',
@@ -538,8 +634,11 @@
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
       notes:document.getElementById('notes').value||'None',
-      focus_areas:(document.getElementById('focusAreas').value||'').trim()||'N/A',
-      referral:document.getElementById('referral').value||'Not provided'
+      referral:document.getElementById('referral').value||'Not provided',
+      org_sqft:orgSqft || 'N/A',
+      org_room_count:orgRoomCount || 'N/A',
+      org_room_types:orgRoomTypes || 'N/A',
+      windows_count:winCountVal
     };
 
     emailjs.send('service_qd4csnq','template_aa8zurg',params)
@@ -562,7 +661,6 @@
 <div id="careersPage" style="display:none">
 
 <style>
-  /* ── Careers-specific styles ── */
   .careers-hero{background:var(--dark);padding:52px 5% 0;text-align:center;position:relative;overflow:hidden}
   .careers-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 0%,rgba(212,168,67,.13) 0%,transparent 70%);pointer-events:none}
   .careers-band{height:4px;background:var(--gold);width:100%;margin-bottom:36px}
@@ -654,7 +752,6 @@
   }
 </style>
 
-<!-- Careers Hero -->
 <div class="careers-hero" style="padding-top:80px">
   <div class="careers-band"></div>
   <div class="careers-brand">Redeemed <span>&</span> Cleaned</div>
@@ -664,7 +761,6 @@
   <div class="careers-band-bot"></div>
 </div>
 
-<!-- Perks Bar -->
 <div class="perks-row">
   <div class="perk"><div class="perk-icon">💰</div><div class="perk-label">Compensation</div><div class="perk-val">$18 – $22 / hr</div></div>
   <div class="perk"><div class="perk-icon">🗓️</div><div class="perk-label">Schedule</div><div class="perk-val">Flexible Hours</div></div>
@@ -672,12 +768,8 @@
   <div class="perk"><div class="perk-icon">🤝</div><div class="perk-label">Environment</div><div class="perk-val">Supportive Team</div></div>
 </div>
 
-<!-- Application Form -->
 <div class="app-wrap">
-
-  <!-- Back link -->
   <button class="back-link" onclick="showMain()" style="margin-bottom:20px">&#8592; Back to Main Site</button>
-
   <div class="app-card">
     <div class="app-card-band"></div>
     <div class="app-body">
@@ -814,10 +906,8 @@
 </div><!-- end #careersPage -->
 
 <script>
-  // ── EmailJS init (careers form) ─────────────────────────────
   emailjs.init({publicKey:'O06yzWAZebWqid3hP'});
 
-  // ── Page switching ──────────────────────────────────────────
   var mainEls = ['home','about','pricing','addons','contact','mainFooter'];
 
   function showCareers(){
@@ -832,7 +922,6 @@
     window.scrollTo(0,0);
   }
 
-  // ── Careers form ────────────────────────────────────────────
   var appZone = document.getElementById('appFileZone');
   var appFileInput = document.getElementById('appResumeFile');
   var appFileNameEl = document.getElementById('appFileName');
