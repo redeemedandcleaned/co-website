@@ -476,9 +476,9 @@
               <label style="font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;display:block;margin-bottom:6px">Number of Windows <span style="color:var(--gold)">*</span></label>
               <select id="restoredWinCount" style="border:1px solid #ddd6cc;border-radius:4px;padding:11px 14px;font-size:0.85rem;width:100%">
                 <option value="">Select window count</option>
-                <option>Small — under 10 windows</option>
-                <option>Medium — 10–20 windows</option>
-                <option>Large — more than 20 windows</option>
+                <option>Small — under 10 windows ($50 value)</option>
+                <option>Medium — 10–20 windows ($100 value)</option>
+                <option>Large — more than 20 windows ($150 value)</option>
               </select>
               <p style="font-size:0.72rem;color:#b07a10;margin-top:6px;font-style:italic">Interior window cleaning is included with The Restored Clean — we just need to know how many windows to plan your visit.</p>
             </div>
