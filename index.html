@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Redeemed & Cleaned | Home Cleaning & Organization</title>
+<title>Redeemed & Cleaned | One-Time & Occasion Cleaning</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
@@ -93,12 +93,6 @@
   .addon-desc{font-size:0.72rem;color:var(--muted)}
   .addon-price{font-size:1rem;font-weight:700;color:var(--gold);white-space:nowrap;margin-left:12px}
 
-  .referral-section{margin-top:60px;background:#1b4332;border-radius:10px;padding:40px;text-align:center}
-  .referral-section h3{font-family:'Playfair Display',serif;color:var(--white);font-size:1.4rem;margin-bottom:8px}
-  .referral-section p{color:rgba(255,255,255,0.65);font-size:0.85rem;margin-bottom:28px;max-width:560px;margin-left:auto;margin-right:auto}
-  .referral-detail{background:rgba(255,255,255,0.07);border-radius:6px;padding:22px 28px;max-width:520px;margin:0 auto;text-align:left}
-  .referral-detail p{color:rgba(255,255,255,0.8);font-size:0.85rem;line-height:1.8;margin-bottom:0}
-  .referral-detail strong{color:var(--gold)}
 
   #contact{background:var(--white)}
   .contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
@@ -134,22 +128,15 @@
   .success-msg p{font-size:0.85rem;color:#5a7a65;line-height:1.7}
   .error-msg{display:none;background:#fff0f0;border:1px solid #f5c1c1;border-radius:6px;padding:16px;text-align:center;margin-top:12px;font-size:0.82rem;color:#a33}
 
-  /* Single Room Organization sub-fields */
+  /* Windows sub-fields (shared style used by interior window count picker) */
   .org-sub-fields{background:var(--white);border:1px solid #ddd6cc;border-radius:4px;padding:14px 16px;margin-top:10px;display:none}
   .org-sub-fields .org-label{font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;margin-bottom:6px;margin-top:12px;display:block}
   .org-sub-fields .org-label:first-child{margin-top:0}
-  .org-scheduling-note{font-size:0.75rem;color:#b07a10;background:#fdf6e3;border:1px solid #f0d98a;border-radius:4px;padding:9px 12px;margin-top:10px;line-height:1.6;font-style:italic}
-  .room-rows{display:flex;flex-direction:column;gap:8px;margin-top:4px}
-  .room-row{display:grid;grid-template-columns:80px 1fr;gap:8px;align-items:center}
-  .room-row label{font-size:0.75rem;letter-spacing:0;text-transform:none;font-weight:600;color:var(--text);margin:0}
-  .room-row select{padding:7px 10px;font-size:0.82rem}
 
   footer{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:36px 5%}
   .foot-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
   .foot-logo span{font-style:italic;color:var(--gold)}
   footer p{font-size:0.75rem;margin-top:6px}
-  .foot-careers{display:inline-block;margin-top:14px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(212,168,67,0.35);padding:6px 18px;border-radius:3px;transition:.2s}
-  .foot-careers:hover{background:var(--gold);color:var(--dark)}
 </style>
 </head>
 <body>
@@ -161,7 +148,6 @@
       <li><a href="#about" onclick="showMain()">About</a></li>
       <li><a href="#pricing" onclick="showMain()">Services</a></li>
       <li><a href="#addons" onclick="showMain()">Add-Ons</a></li>
-      <li><a href="#" onclick="showCareers();return false;">Careers</a></li>
       <li><a href="#contact" class="nav-cta" onclick="showMain()">Get a Quote</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
@@ -173,15 +159,14 @@
   <a href="#about" onclick="showMain();toggleMenu()">About</a>
   <a href="#pricing" onclick="showMain();toggleMenu()">Services</a>
   <a href="#addons" onclick="showMain();toggleMenu()">Add-Ons</a>
-  <a href="#" onclick="showCareers();toggleMenu();return false;">Careers</a>
   <a href="#contact" onclick="showMain();toggleMenu()">Get a Quote</a>
 </div>
 
 <section class="hero" id="home">
   <div class="hero-content">
-    <div class="hero-badge">Residential Cleaning &amp; Organization</div>
+    <div class="hero-badge">One-Time &amp; Occasion Cleaning</div>
     <h1>A Clean Home.<br>A <em>Restored</em> Space.</h1>
-    <p>Professional home cleaning, deep cleaning, organization, and decluttering services — done with integrity, care, and attention to every detail.</p>
+    <p>One-time cleaning for life's biggest moments — hosting, moving, celebrating, or simply getting through a hard season. Done with integrity, care, and attention to every detail.</p>
     <div class="hero-btns">
       <a href="#pricing" class="btn-primary" onclick="showMain()">View Services</a>
       <a href="#contact" class="btn-outline" onclick="showMain()">Request a Quote</a>
@@ -196,8 +181,8 @@
         <div class="section-label">Who We Are</div>
         <h2 class="section-title">Cleaning With Purpose &amp; Grace</h2>
         <div class="divider-gold"><span>&#10022;</span></div>
-        <p class="section-sub">Redeemed &amp; Cleaned is a residential cleaning and organization service rooted in integrity, excellence, and genuine care for every home we enter. We treat your home as if it were our own.</p>
-        <p style="font-size:0.85rem;color:var(--text);line-height:1.8;margin-top:16px">Whether you need a regular maintenance clean, a deep refresh, help decluttering, or a fresh start with a move-in/move-out clean — we show up on time, work hard, and leave your home transformed.</p>
+        <p class="section-sub">Redeemed &amp; Cleaned is a residential cleaning service built around life's moments — not routines. We treat your home as if it were our own.</p>
+        <p style="font-size:0.85rem;color:var(--text);line-height:1.8;margin-top:16px">Whether you're hosting an event, closing out a move, or just need extra hands during a hard season — we show up on time, work hard, and leave your home transformed. No contracts, no recurring schedule. Just reach out when you need us.</p>
         <div class="about-values">
           <div class="value-card"><h4>Integrity</h4><p>We work honestly in every home, respecting your space and your trust.</p></div>
           <div class="value-card"><h4>Excellence</h4><p>We don't cut corners. Every visit is done with care and attention to detail.</p></div>
@@ -213,7 +198,7 @@
         </div>
         <h3>Serving Your Home<br>With a Caring Heart</h3>
         <p>We believe a clean, ordered home is a gift to your family. Every room we clean is approached with purpose, pride, and a genuine desire to make your life easier.</p>
-        <div class="about-tagline">"A place for everything, and everything in its place."</div>
+        <div class="about-tagline">"Every season deserves a fresh start."</div>
       </div>
     </div>
   </div>
@@ -224,18 +209,19 @@
     <div class="section-label">Our Services</div>
     <h2 class="section-title">Honest Pricing, Quality Work</h2>
     <div class="divider-gold"><span>&#10022;</span></div>
+    <p class="section-sub" style="margin-bottom:32px">Every service below is a one-time clean — no contracts, no recurring commitment. Just reach out when you need us.</p>
     <div class="pricing-grid">
 
       <div class="price-card">
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <div class="price-name">The Grace Clean</div>
-        <div class="price-tag-line">Essential Maintenance</div>
+        <div class="price-name">The Welcome Clean</div>
+        <div class="price-tag-line">Light Refresh</div>
         <div class="price-amount"><sup>$</sup>75 <small>– $150</small></div>
-        <div class="price-note">Per visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
+        <div class="price-note">One-time visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
-        <p class="price-desc">A faithful, consistent clean for homes that need regular upkeep. Perfect for weekly or biweekly clients who want a fresh, tidy home maintained with care and reliability.</p>
+        <p class="price-desc">A lighter, one-time refresh for homes that just need to look their best — before guests arrive, after a small gathering, or any occasion calling for a quick reset.</p>
         <ul class="price-includes">
           <li>Kitchen surfaces, sink &amp; appliance exteriors</li>
           <li>Bathroom sanitizing &amp; scrubbing</li>
@@ -247,18 +233,18 @@
       </div>
 
       <div class="price-card popular">
-        <div class="popular-badge">Most Popular &middot; Recommended Start</div>
+        <div class="popular-badge">Most Popular</div>
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-5"/></svg>
         </div>
-        <div class="price-name">The Redeemed Clean</div>
+        <div class="price-name">The Restored Clean</div>
         <div class="price-tag-line">Deep Refresh</div>
         <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
-        <div class="price-note">Per visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
+        <div class="price-note">One-time visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
-        <p class="price-desc">A thorough, top-to-bottom transformation for homes that need more than surface care. <strong style="color:var(--dark)">We recommend starting here</strong> — it gives us a full picture of your home so every future visit is faster and more efficient.</p>
+        <p class="price-desc">Whether you're preparing for a special event or coming through a hard season — the loss of a loved one, a new baby, an illness, or simply more than you could keep up with — this deep, top-to-bottom clean restores your home to a place of peace.</p>
         <ul class="price-includes">
-          <li>Everything in The Grace Clean</li>
+          <li>Everything in The Welcome Clean</li>
           <li>Inside oven &amp; microwave</li>
           <li>Baseboards, door frames &amp; light switches</li>
           <li>Window sills &amp; interior window cleaning</li>
@@ -270,8 +256,8 @@
         <div class="price-icon">
           <svg viewBox="0 0 24 24"><path d="M5 12H3l9-9 9 9h-2"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M10 22v-6h4v6"/></svg>
         </div>
-        <div class="price-name">Move-In / Move-Out</div>
-        <div class="price-tag-line">Fresh Start Clean</div>
+        <div class="price-name">The Fresh Start Clean</div>
+        <div class="price-tag-line">Move-In / Move-Out</div>
         <div class="price-amount"><sup>$</sup>250 <small>– $500</small></div>
         <div class="price-note">Flat rate &middot; up to 4,000 sq ft &middot; 4 bed / 3 bath</div>
         <div class="price-divider"></div>
@@ -289,14 +275,6 @@
       </div>
 
     </div>
-
-    <div class="referral-section">
-      <h3>Refer a Friend &amp; Save</h3>
-      <p>Know someone who could use a clean, restored home? Send them our way — and we'll take care of both of you.</p>
-      <div class="referral-detail">
-        <p>When you refer a new client, <strong>you receive $20 off</strong> your next cleaning. Your friend just needs to include <strong>your name</strong> in their quote request online so we can make sure you get the credit.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -309,10 +287,8 @@
     <div class="addons-grid">
       <div class="addon-card"><div><div class="addon-name">Interior Windows</div><div class="addon-desc">Full home window cleaning inside — pricing based on window count</div></div><div class="addon-price">+$50–$150</div></div>
       <div class="addon-card"><div><div class="addon-name">Oven Deep Clean</div><div class="addon-desc">Interior oven scrub &amp; degrease</div></div><div class="addon-price">+$30</div></div>
-      <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Redeemed Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows and Oven Deep Clean are already included at no extra charge with The Redeemed Clean package.</div></div></div>
+      <div class="addon-card" style="grid-column:1/-1;background:#f0f7f4;border-color:var(--gold)"><div><div class="addon-name" style="color:var(--dark)">&#10022; Included in The Restored Clean</div><div class="addon-desc" style="font-size:0.75rem">Interior Windows and Oven Deep Clean are already included at no extra charge with The Restored Clean package.</div></div></div>
       <div class="addon-card"><div><div class="addon-name">Refrigerator Deep Clean</div><div class="addon-desc">Full interior scrub &amp; wipe-down — excludes freezer</div></div><div class="addon-price">+$30</div></div>
-      <div class="addon-card"><div><div class="addon-name">Single Room Organization</div><div class="addon-desc">One closet, pantry, bedroom, or kitchen — pricing based on size</div></div><div class="addon-price">+$50–$150</div></div>
-      <div class="addon-card"><div><div class="addon-name">Patio / Porch Sweep</div><div class="addon-desc">Sweep, wipe furniture &amp; tidy</div></div><div class="addon-price">+$20</div></div>
       <div class="addon-card"><div><div class="addon-name">Laundry — Fold &amp; Organize</div><div class="addon-desc">Fold and organize one full load</div></div><div class="addon-price">+$30</div></div>
     </div>
   </div>
@@ -333,10 +309,6 @@
         <div class="contact-detail">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
           <div>Proudly serving Carlinville, IL &amp; surrounding areas</div>
-        </div>
-        <div class="contact-detail">
-          <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div>Mon – Fri &nbsp;&middot;&nbsp; 8:00am – 4:00pm</div>
         </div>
         <div class="contact-promise">
           <strong>Our Promise:</strong> We enter every home with honesty, integrity, and a genuine desire to serve. Your space and your trust are safe with us.
@@ -400,21 +372,21 @@
             <label>Service Interested In *</label>
             <select id="service" required onchange="handleServiceChange()">
               <option value="">Select a service</option>
-              <option>The Grace Clean — Maintenance ($75–$150)</option>
-              <option>The Redeemed Clean — Deep Refresh ($180–$300)</option>
-              <option>Move-In / Move-Out Clean ($250–$500)</option>
+              <option>The Welcome Clean — Light Refresh ($75–$150)</option>
+              <option>The Restored Clean — Deep Refresh ($180–$300)</option>
+              <option>The Fresh Start Clean — Move-In / Move-Out ($250–$500)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
           </div>
           <div class="form-group">
-            <label>How Often?</label>
-            <select id="frequency">
+            <label>What's the Occasion?</label>
+            <select id="occasion">
               <option value="">Select one</option>
-              <option>One-time only</option>
-              <option>Monthly</option>
-              <option>Biweekly</option>
-              <option>Weekly</option>
-              <option>Not sure yet</option>
+              <option>Hosting an event or gathering</option>
+              <option>Move-In / Move-Out</option>
+              <option>Going through a hard season</option>
+              <option>Just want a one-time clean</option>
+              <option>Other</option>
             </select>
           </div>
           <div class="form-group">
@@ -433,52 +405,24 @@
               </div>
               <label id="labelOven"><input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)</label>
               <label><input type="checkbox" class="addon" value="Refrigerator Deep Clean (+$30)"> Refrigerator Deep Clean (+$30) <span style="font-size:0.72rem;color:var(--muted);font-style:italic">— excludes freezer</span></label>
-              <label id="labelOrgAddon"><input type="checkbox" class="addon" id="addonOrg" value="Single Room Organization (+$50–$150)" onchange="handleOrgAddonChange()"> Single Room Organization (+$50–$150)</label>
-              <!-- Organization sub-fields -->
-              <div class="org-sub-fields" id="orgSubFields">
-                <span class="org-label">Space Size (per room)</span>
-                <select id="orgSqft">
-                  <option value="">Select size range</option>
-                  <option>Small — under 50 sq ft (e.g. small closet, pantry)</option>
-                  <option>Medium — 50–150 sq ft (e.g. large closet, small bedroom)</option>
-                  <option>Large — 150–300 sq ft (e.g. master bedroom, kitchen)</option>
-                  <option>Extra Large — 300+ sq ft (e.g. large open space)</option>
-                </select>
-                <span class="org-label" style="margin-top:12px">Number of Rooms</span>
-                <select id="orgRoomCount" onchange="buildRoomRows()">
-                  <option value="">Select number</option>
-                  <option value="1">1 room</option>
-                  <option value="2">2 rooms</option>
-                  <option value="3">3 rooms</option>
-                  <option value="4">4 rooms</option>
-                  <option value="5">5 rooms</option>
-                </select>
-                <div class="room-rows" id="roomRows"></div>
-                <div class="org-scheduling-note">&#9432; Note: Cleaning and room organization services may be scheduled at separate times.</div>
-              </div>
-              <label><input type="checkbox" class="addon" value="Patio / Porch Sweep (+$20)"> Patio / Porch Sweep (+$20)</label>
               <label><input type="checkbox" class="addon" value="Laundry Fold & Organize (+$30)"> Laundry — Fold &amp; Organize (+$30)</label>
             </div>
-            <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows and Oven Deep Clean are included with The Redeemed Clean — no need to select them separately.</p>
-            <!-- Shown only when Redeemed Clean is selected -->
-            <div id="redeemedWinCountGroup" style="display:none;margin-top:12px">
+            <p style="font-size:0.72rem;color:var(--muted);margin-top:8px;font-style:italic">&#10022; Interior Windows and Oven Deep Clean are included with The Restored Clean — no need to select them separately.</p>
+            <!-- Shown only when Restored Clean is selected -->
+            <div id="restoredWinCountGroup" style="display:none;margin-top:12px">
               <label style="font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;display:block;margin-bottom:6px">Number of Windows <span style="color:var(--gold)">*</span></label>
-              <select id="redeemedWinCount" style="border:1px solid #ddd6cc;border-radius:4px;padding:11px 14px;font-size:0.85rem;width:100%">
+              <select id="restoredWinCount" style="border:1px solid #ddd6cc;border-radius:4px;padding:11px 14px;font-size:0.85rem;width:100%">
                 <option value="">Select window count</option>
                 <option>Small — under 10 windows</option>
                 <option>Medium — 10–20 windows</option>
                 <option>Large — more than 20 windows</option>
               </select>
-              <p style="font-size:0.72rem;color:#b07a10;margin-top:6px;font-style:italic">Interior window cleaning is included with The Redeemed Clean — we just need to know how many windows to plan your visit.</p>
+              <p style="font-size:0.72rem;color:#b07a10;margin-top:6px;font-style:italic">Interior window cleaning is included with The Restored Clean — we just need to know how many windows to plan your visit.</p>
             </div>
           </div>
           <div class="form-group">
             <label>Special Instructions / Notes</label>
             <textarea id="notes" placeholder="Allergies, sensitivities, areas of focus, access instructions..."></textarea>
-          </div>
-          <div class="form-group">
-            <label>Referred by a Client? Enter Their Name</label>
-            <input type="text" id="referral" placeholder="First and last name of the person who referred you">
           </div>
           <button type="submit" class="form-submit" id="submitBtn">Send My Quote Request</button>
           <p class="form-note">We'll be in touch with you promptly. No spam, ever.</p>
@@ -497,9 +441,8 @@
 
 <footer id="mainFooter">
   <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
-  <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
+  <p>One-Time &amp; Occasion Cleaning &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
   <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
-  <a href="#" onclick="showCareers();return false;" class="foot-careers">We're Hiring — Join Our Team</a>
 </footer>
 
 <script>
@@ -510,16 +453,19 @@
     m.style.display=m.style.display==='block'?'none':'block';
   }
 
+  // Retained as a no-op for nav links; the careers page it used to toggle has been removed.
+  function showMain(){}
+
   function handleServiceChange(){
     var val = document.getElementById('service').value;
-    var isRedeemed = val.indexOf('Redeemed Clean') !== -1;
+    var isRestored = val.indexOf('Restored Clean') !== -1;
 
     var winCb = document.getElementById('addonWindows');
     var ovenCb = document.getElementById('addonOven');
     var winLabel = document.getElementById('labelWindows');
     var ovenLabel = document.getElementById('labelOven');
 
-    if(isRedeemed){
+    if(isRestored){
       winCb.checked = false; winCb.disabled = true;
       ovenCb.checked = false; ovenCb.disabled = true;
       var winSub = document.getElementById('winSubFields');
@@ -528,14 +474,14 @@
       winLabel.innerHTML = '<input type="checkbox" disabled> Interior Windows <span class="addon-included-tag">✓ Included</span>';
       ovenLabel.className = 'addon-included-label';
       ovenLabel.innerHTML = '<input type="checkbox" disabled> Oven Deep Clean <span class="addon-included-tag">✓ Included</span>';
-      document.getElementById('redeemedWinCountGroup').style.display = 'block';
+      document.getElementById('restoredWinCountGroup').style.display = 'block';
     } else {
       winLabel.className = '';
       winLabel.innerHTML = '<input type="checkbox" class="addon" id="addonWindows" value="Interior Windows (+$50–$150)" onchange="handleWinAddonChange()"> Interior Windows (+$50–$150)';
       ovenLabel.className = '';
       ovenLabel.innerHTML = '<input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)';
-      document.getElementById('redeemedWinCountGroup').style.display = 'none';
-      document.getElementById('redeemedWinCount').value = '';
+      document.getElementById('restoredWinCountGroup').style.display = 'none';
+      document.getElementById('restoredWinCount').value = '';
     }
   }
 
@@ -547,40 +493,6 @@
     if(!cb.checked){ document.getElementById('winCount').value = ''; }
   }
 
-  function handleOrgAddonChange(){
-    var cb = document.getElementById('addonOrg');
-    var sub = document.getElementById('orgSubFields');
-    sub.style.display = cb.checked ? 'block' : 'none';
-    if(!cb.checked){
-      document.getElementById('orgSqft').value = '';
-      document.getElementById('orgRoomCount').value = '';
-      document.getElementById('roomRows').innerHTML = '';
-    }
-  }
-
-  var roomTypeOptions = ['Pantry','Closet','Bedroom','Kitchen Cabinets','Bathroom','Other'];
-
-  function buildRoomRows(){
-    var count = parseInt(document.getElementById('orgRoomCount').value) || 0;
-    var container = document.getElementById('roomRows');
-    container.innerHTML = '';
-    for(var i = 1; i <= count; i++){
-      var row = document.createElement('div');
-      row.className = 'room-row';
-      var lbl = document.createElement('label');
-      lbl.textContent = 'Room ' + i + ':';
-      var sel = document.createElement('select');
-      sel.id = 'roomType_' + i;
-      sel.innerHTML = '<option value="">Select type</option>';
-      roomTypeOptions.forEach(function(opt){
-        sel.innerHTML += '<option value="'+opt+'">'+opt+'</option>';
-      });
-      row.appendChild(lbl);
-      row.appendChild(sel);
-      container.appendChild(row);
-    }
-  }
-
   function submitForm(e){
     e.preventDefault();
     var btn=document.getElementById('submitBtn');
@@ -590,30 +502,13 @@
     var addons=[];
     document.querySelectorAll('.addon:checked').forEach(function(c){addons.push(c.value);});
 
-    // Gather org sub-field data
-    var orgSelected = document.getElementById('addonOrg') && document.getElementById('addonOrg').checked;
-    var orgSqft = orgSelected ? (document.getElementById('orgSqft').value || 'Not specified') : '';
-    var orgRoomCount = '';
-    var orgRoomTypes = '';
-    if(orgSelected){
-      var countVal = document.getElementById('orgRoomCount').value;
-      orgRoomCount = countVal || 'Not specified';
-      var count = parseInt(countVal) || 0;
-      var types = [];
-      for(var i = 1; i <= count; i++){
-        var sel = document.getElementById('roomType_' + i);
-        types.push('Room ' + i + ': ' + (sel && sel.value ? sel.value : 'Not specified'));
-      }
-      orgRoomTypes = types.length ? types.join(' | ') : 'Not specified';
-    }
-
-    // Gather windows sub-field data — check addon checkbox path OR Redeemed Clean included path
+    // Gather windows sub-field data — check addon checkbox path OR Restored Clean included path
     var winChecked = document.getElementById('addonWindows') && document.getElementById('addonWindows').checked;
-    var redeemedWinEl = document.getElementById('redeemedWinCount');
-    var redeemedWinVisible = document.getElementById('redeemedWinCountGroup').style.display === 'block';
+    var restoredWinEl = document.getElementById('restoredWinCount');
+    var restoredWinVisible = document.getElementById('restoredWinCountGroup').style.display === 'block';
     var winCountVal;
-    if(redeemedWinVisible){
-      winCountVal = redeemedWinEl.value || 'Not specified';
+    if(restoredWinVisible){
+      winCountVal = restoredWinEl.value || 'Not specified';
     } else if(winChecked){
       winCountVal = document.getElementById('winCount').value || 'Not specified';
     } else {
@@ -630,14 +525,10 @@
       bedrooms:document.getElementById('bedrooms').value||'Not specified',
       bathrooms:document.getElementById('bathrooms').value||'Not specified',
       service:document.getElementById('service').value,
-      frequency:document.getElementById('frequency').value||'Not specified',
+      occasion:document.getElementById('occasion').value||'Not specified',
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
       notes:document.getElementById('notes').value||'None',
-      referral:document.getElementById('referral').value||'Not provided',
-      org_sqft:orgSqft || 'N/A',
-      org_room_count:orgRoomCount || 'N/A',
-      org_room_types:orgRoomTypes || 'N/A',
       windows_count:winCountVal
     };
 
@@ -655,379 +546,5 @@
   }
 </script>
 
-<!-- ═══════════════════════════════════════════════════
-     CAREERS PAGE (hidden by default)
-════════════════════════════════════════════════════ -->
-<div id="careersPage" style="display:none">
-
-<style>
-  .careers-hero{background:var(--dark);padding:52px 5% 0;text-align:center;position:relative;overflow:hidden}
-  .careers-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 60% 0%,rgba(212,168,67,.13) 0%,transparent 70%);pointer-events:none}
-  .careers-band{height:4px;background:var(--gold);width:100%;margin-bottom:36px}
-  .careers-band-bot{height:4px;background:var(--gold);width:100%;margin-top:36px}
-  .careers-brand{font-family:'Playfair Display',serif;font-size:.9rem;color:rgba(255,255,255,.55);letter-spacing:4px;text-transform:uppercase;margin-bottom:10px}
-  .careers-brand span{color:var(--gold)}
-  .careers-title{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:#fff;line-height:1.1;margin-bottom:10px}
-  .careers-title em{font-style:italic;color:var(--gold)}
-  .careers-sub{font-size:.82rem;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:22px}
-  .careers-desc{max-width:520px;margin:0 auto 36px;font-size:.97rem;color:rgba(255,255,255,.75);line-height:1.8}
-
-  .perks-row{display:flex;justify-content:center;background:#2d6a4f;flex-wrap:wrap}
-  .perk{flex:1;min-width:160px;max-width:240px;padding:22px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
-  .perk:last-child{border-right:none}
-  .perk-icon{font-size:1.4rem;margin-bottom:6px}
-  .perk-label{font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:3px}
-  .perk-val{font-size:.92rem;color:#fff;font-weight:600}
-
-  .app-wrap{max-width:760px;margin:44px auto 64px;padding:0 5%}
-  .app-card{background:#fff;box-shadow:0 8px 48px rgba(0,0,0,.1);overflow:hidden}
-  .app-card-band{height:14px;background:var(--dark)}
-  .app-card-band::after{content:'';display:block;height:4px;background:var(--gold);margin-top:3px}
-  .app-card-band-bot{height:14px;background:var(--dark)}
-  .app-card-band-bot::before{content:'';display:block;height:4px;background:var(--gold);margin-bottom:3px}
-  .app-body{padding:40px 48px}
-
-  .app-sec{font-size:.63rem;letter-spacing:3.5px;text-transform:uppercase;color:var(--dark);font-weight:700;display:flex;align-items:center;gap:12px;margin-bottom:20px;margin-top:32px}
-  .app-sec:first-of-type{margin-top:0}
-  .app-sec::after{content:'';flex:1;height:1px;background:#c8ddd4}
-
-  .app-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .app-full{grid-column:1/-1}
-  .app-field{display:flex;flex-direction:column;gap:5px}
-  .app-field label{font-size:.62rem;letter-spacing:2.5px;text-transform:uppercase;color:#74a98a;font-weight:700}
-  .app-field label .req{color:var(--gold);margin-left:2px}
-  .app-field input,.app-field select,.app-field textarea{border:none;border-bottom:1.5px solid #c8ddd4;padding:7px 2px;font-size:.88rem;color:var(--dark);font-family:'Lato',sans-serif;background:transparent;outline:none;transition:border-color .2s;width:100%}
-  .app-field input:focus,.app-field select:focus,.app-field textarea:focus{border-bottom-color:var(--gold)}
-  .app-field select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%2374a98a'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center}
-  .app-field textarea{resize:vertical;min-height:72px;line-height:1.6}
-
-  .app-check-group{display:flex;flex-direction:column;gap:10px;margin-top:2px}
-  .app-check-item{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:#3a5a47;cursor:pointer;line-height:1.45}
-  .app-check-item input[type=checkbox],.app-check-item input[type=radio]{appearance:none;width:18px;height:18px;border:2px solid #2d6a4f;border-radius:3px;flex-shrink:0;margin-top:1px;cursor:pointer;transition:all .15s;background:#fff}
-  .app-check-item input[type=radio]{border-radius:50%}
-  .app-check-item input[type=checkbox]:checked,.app-check-item input[type=radio]:checked{background:var(--gold);border-color:var(--gold);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline points='2,6 5,9 10,3' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:11px;background-repeat:no-repeat;background-position:center}
-  .app-check-item input[type=radio]:checked{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='3' fill='white'/%3E%3C/svg%3E")}
-  .app-check-item:hover input[type=checkbox],.app-check-item:hover input[type=radio]{border-color:var(--gold);background:#fffbf0}
-  .app-check-item:hover input[type=checkbox]:checked,.app-check-item:hover input[type=radio]:checked{background:var(--gold);border-color:var(--gold);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline points='2,6 5,9 10,3' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:11px;background-repeat:no-repeat;background-position:center}
-  .app-check-item:hover input[type=radio]:checked{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='3' fill='white'/%3E%3C/svg%3E")}
-  .app-radio-row{display:flex;flex-wrap:wrap;gap:20px}
-  .app-days-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-
-  .app-file-zone{border:2px dashed #c8ddd4;border-radius:4px;padding:24px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s;position:relative}
-  .app-file-zone:hover,.app-file-zone.dragover{border-color:var(--gold);background:rgba(212,168,67,.05)}
-  .app-file-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
-  .app-file-icon{font-size:1.6rem;margin-bottom:6px}
-  .app-file-main{font-size:.85rem;color:var(--dark);font-weight:600;margin-bottom:3px}
-  .app-file-sub{font-size:.75rem;color:#74a98a}
-  .app-file-name{margin-top:8px;font-size:.8rem;color:#2d6a4f;font-weight:600;display:none}
-
-  .app-disclaimer{background:var(--light);border-left:3px solid var(--gold);padding:14px 18px;font-size:.8rem;color:#3a5a47;line-height:1.7;margin-top:8px}
-  .app-disclaimer strong{color:var(--dark)}
-
-  .app-div{display:flex;align-items:center;gap:12px;margin:28px 0}
-  .app-div::before,.app-div::after{content:'';flex:1;height:1px}
-  .app-div::before{background:linear-gradient(to right,transparent,var(--gold))}
-  .app-div::after{background:linear-gradient(to left,transparent,var(--gold))}
-  .app-div span{color:var(--gold);font-size:1rem}
-
-  .app-submit-row{text-align:center;margin-top:8px}
-  .app-btn{padding:14px 52px;background:var(--dark);color:#fff;border:none;font-family:'Lato',sans-serif;font-size:.73rem;letter-spacing:3px;text-transform:uppercase;font-weight:700;cursor:pointer;transition:background .2s}
-  .app-btn:hover{background:var(--gold);color:var(--dark)}
-  .app-btn:disabled{opacity:.5;cursor:not-allowed}
-  .app-status{margin-top:18px;padding:14px 20px;border-radius:4px;font-size:.85rem;text-align:center;display:none}
-  .app-status.success{background:#e6f4ee;color:var(--dark);border:1px solid #c8ddd4;display:block}
-  .app-status.error{background:#fdf0f0;color:#b94040;border:1px solid #f0c0c0;display:block}
-
-  .back-link{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:#74a98a;cursor:pointer;border:none;background:none;font-family:'Lato',sans-serif;font-weight:700;padding:0;margin-bottom:0}
-  .back-link:hover{color:var(--gold)}
-
-  @media(max-width:600px){
-    .app-grid{grid-template-columns:1fr}
-    .app-full{grid-column:1}
-    .app-body{padding:28px 22px}
-    .careers-title{font-size:2rem}
-    .app-radio-row{flex-direction:column;gap:10px}
-    .perks-row{flex-direction:column}
-    .perk{border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}
-  }
-</style>
-
-<div class="careers-hero" style="padding-top:80px">
-  <div class="careers-band"></div>
-  <div class="careers-brand">Redeemed <span>&</span> Cleaned</div>
-  <div class="careers-title">Join <em>Our Team</em></div>
-  <div class="careers-sub">Now Hiring — Cleaning Professionals</div>
-  <div class="careers-desc">We're looking for reliable, detail-oriented people who take pride in their work and love leaving a space transformed. If that's you, we'd love to hear from you.</div>
-  <div class="careers-band-bot"></div>
-</div>
-
-<div class="perks-row">
-  <div class="perk"><div class="perk-icon">💰</div><div class="perk-label">Compensation</div><div class="perk-val">$18 – $22 / hr</div></div>
-  <div class="perk"><div class="perk-icon">🗓️</div><div class="perk-label">Schedule</div><div class="perk-val">Flexible Hours</div></div>
-  <div class="perk"><div class="perk-icon">📍</div><div class="perk-label">Coverage Area</div><div class="perk-val">Carlinville &amp; Surrounding</div></div>
-  <div class="perk"><div class="perk-icon">🤝</div><div class="perk-label">Environment</div><div class="perk-val">Supportive Team</div></div>
-</div>
-
-<div class="app-wrap">
-  <button class="back-link" onclick="showMain()" style="margin-bottom:20px">&#8592; Back to Main Site</button>
-  <div class="app-card">
-    <div class="app-card-band"></div>
-    <div class="app-body">
-      <form id="appForm" novalidate>
-
-        <div class="app-sec">Personal Information</div>
-        <div class="app-grid">
-          <div class="app-field" id="af-first"><label>First Name <span class="req">*</span></label><input type="text" name="first_name" placeholder="Jane" required></div>
-          <div class="app-field" id="af-last"><label>Last Name <span class="req">*</span></label><input type="text" name="last_name" placeholder="Smith" required></div>
-          <div class="app-field" id="af-email"><label>Email Address <span class="req">*</span></label><input type="email" name="app_email" placeholder="you@email.com" required></div>
-          <div class="app-field" id="af-phone"><label>Phone Number <span class="req">*</span></label><input type="tel" name="app_phone" placeholder="(217) 555-0100" required></div>
-          <div class="app-field app-full" id="af-address"><label>Street Address <span class="req">*</span></label><input type="text" name="app_address" placeholder="123 Main St, City, IL  62626" required></div>
-        </div>
-
-        <div class="app-sec">Legal Eligibility</div>
-        <div class="app-grid">
-          <div class="app-field app-full"><label>Are you legally authorized to work in the United States? <span class="req">*</span></label>
-            <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="work_auth" value="Yes"> Yes, I am authorized to work in the U.S.</label>
-              <label class="app-check-item"><input type="radio" name="work_auth" value="No"> No</label>
-            </div>
-          </div>
-          <div class="app-field app-full"><label>Are you 18 years of age or older? <span class="req">*</span></label>
-            <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="age_18" value="Yes"> Yes</label>
-              <label class="app-check-item"><input type="radio" name="age_18" value="No"> No</label>
-            </div>
-          </div>
-          <div class="app-field app-full"><label>Have you ever been convicted of a felony? <span class="req">*</span></label>
-            <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="felony" value="No"> No</label>
-              <label class="app-check-item"><input type="radio" name="felony" value="Yes"> Yes — a conviction does not automatically disqualify you</label>
-            </div>
-          </div>
-          <div class="app-field app-full"><label>Do you have a valid driver's license and reliable transportation? <span class="req">*</span></label>
-            <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="transportation" value="Yes"> Yes</label>
-              <label class="app-check-item"><input type="radio" name="transportation" value="No"> No</label>
-            </div>
-          </div>
-        </div>
-
-        <div class="app-sec">Availability &amp; Position</div>
-        <div class="app-grid">
-          <div class="app-field app-full"><label>What days are you generally available? <span class="req">*</span></label>
-            <div class="app-days-grid">
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Monday"> Monday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Tuesday"> Tuesday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Wednesday"> Wednesday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Thursday"> Thursday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Friday"> Friday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Saturday"> Saturday</label>
-              <label class="app-check-item"><input type="checkbox" name="avail_days" value="Sunday"> Sunday</label>
-            </div>
-          </div>
-          <div class="app-field" id="af-hours"><label>Preferred hours per week <span class="req">*</span></label>
-            <select name="hours_week" required>
-              <option value="">Select…</option>
-              <option>Part-time (under 20 hrs)</option>
-              <option>Part-time (20–29 hrs)</option>
-              <option>Full-time (30+ hrs)</option>
-              <option>Flexible / As needed</option>
-            </select>
-          </div>
-          <div class="app-field" id="af-start"><label>Earliest available start date <span class="req">*</span></label><input type="date" name="start_date" required></div>
-        </div>
-
-        <div class="app-sec">Experience &amp; Background</div>
-        <div class="app-grid">
-          <div class="app-field app-full"><label>Do you have prior professional cleaning experience?</label>
-            <div class="app-radio-row" style="margin-top:10px">
-              <label class="app-check-item"><input type="radio" name="prior_exp" value="Yes"> Yes</label>
-              <label class="app-check-item"><input type="radio" name="prior_exp" value="No"> No</label>
-            </div>
-          </div>
-          <div class="app-field app-full"><label>If yes — briefly describe your experience</label><textarea name="exp_detail" placeholder="e.g. 2 years residential cleaning, familiar with move-out cleans…"></textarea></div>
-          <div class="app-field app-full"><label>How did you hear about this position?</label>
-            <select name="referral_src">
-              <option value="">Select…</option>
-              <option>Word of mouth / friend or family</option>
-              <option>Facebook</option>
-              <option>Google search</option>
-              <option>Indeed or job board</option>
-              <option>Our website</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="app-field app-full"><label>Anything else you'd like us to know?</label><textarea name="additional" placeholder="Optional — share anything relevant to your application…"></textarea></div>
-        </div>
-
-        <div class="app-sec">Résumé / References</div>
-        <div class="app-field app-full">
-          <label>Upload Résumé <span style="font-size:.65rem;color:#74a98a;font-style:italic;text-transform:none;letter-spacing:0">(optional — PDF, DOC, or DOCX · max 5 MB)</span></label>
-          <div class="app-file-zone" id="appFileZone">
-            <input type="file" id="appResumeFile" accept=".pdf,.doc,.docx">
-            <div class="app-file-icon">📄</div>
-            <div class="app-file-main">Click to browse or drag &amp; drop</div>
-            <div class="app-file-sub">PDF, DOC, or DOCX — up to 5 MB</div>
-            <div class="app-file-name" id="appFileName"></div>
-          </div>
-        </div>
-
-        <div class="app-disclaimer">
-          <strong>Equal Opportunity Statement:</strong> Redeemed &amp; Cleaned LLC is an equal opportunity employer and does not discriminate on the basis of race, color, religion, sex, national origin, age, disability, or any other characteristic protected by law.
-        </div>
-
-        <div class="app-div"><span>&#10022;</span></div>
-
-        <div class="app-field app-full" style="margin-bottom:22px">
-          <label class="app-check-item" style="align-items:flex-start">
-            <input type="checkbox" id="appConsent" required style="margin-top:3px">
-            <span>I certify that the information provided is true and complete to the best of my knowledge. I consent to Redeemed &amp; Cleaned LLC retaining this application for consideration. <span class="req">*</span></span>
-          </label>
-        </div>
-
-        <div class="app-submit-row">
-          <button class="app-btn" type="submit" id="appSubmitBtn">Submit Application</button>
-          <div class="app-status" id="appStatusMsg"></div>
-        </div>
-
-      </form>
-    </div>
-    <div class="app-card-band-bot"></div>
-  </div>
-</div>
-
-  <footer>
-    <div class="foot-logo">Redeemed <span>&</span> Cleaned</div>
-    <p>Residential Cleaning &amp; Organization &nbsp;&middot;&nbsp; Proudly Serving Carlinville, IL &amp; Surrounding Areas</p>
-    <p style="margin-top:8px;opacity:.5;font-size:0.7rem">&copy; 2025 Redeemed &amp; Cleaned. All rights reserved.</p>
-    <button onclick="showMain()" style="margin-top:14px;font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);background:none;border:1px solid rgba(212,168,67,0.35);padding:6px 18px;border-radius:3px;cursor:pointer;font-family:'Lato',sans-serif">&#8592; Back to Main Site</button>
-  </footer>
-
-</div><!-- end #careersPage -->
-
-<script>
-  emailjs.init({publicKey:'O06yzWAZebWqid3hP'});
-
-  var mainEls = ['home','about','pricing','addons','contact','mainFooter'];
-
-  function showCareers(){
-    mainEls.forEach(function(id){ var el=document.getElementById(id); if(el) el.style.display='none'; });
-    document.getElementById('careersPage').style.display='block';
-    window.scrollTo(0,0);
-  }
-
-  function showMain(){
-    document.getElementById('careersPage').style.display='none';
-    mainEls.forEach(function(id){ var el=document.getElementById(id); if(el) el.style.display=''; });
-    window.scrollTo(0,0);
-  }
-
-  var appZone = document.getElementById('appFileZone');
-  var appFileInput = document.getElementById('appResumeFile');
-  var appFileNameEl = document.getElementById('appFileName');
-
-  appZone.addEventListener('dragover',function(e){e.preventDefault();appZone.classList.add('dragover');});
-  appZone.addEventListener('dragleave',function(){appZone.classList.remove('dragover');});
-  appZone.addEventListener('drop',function(e){e.preventDefault();appZone.classList.remove('dragover');if(e.dataTransfer.files[0]){appFileInput.files=e.dataTransfer.files;showAppFileName();}});
-  appFileInput.addEventListener('change',showAppFileName);
-
-  function showAppFileName(){
-    var f=appFileInput.files[0];
-    if(!f)return;
-    if(f.size>5*1024*1024){alert('File is larger than 5 MB. Please choose a smaller file.');appFileInput.value='';appFileNameEl.style.display='none';return;}
-    appFileNameEl.textContent='✓ '+f.name;
-    appFileNameEl.style.display='block';
-  }
-
-  function getChecked(name){
-    return Array.from(document.querySelectorAll('input[name="'+name+'"]:checked')).map(function(el){return el.value;}).join(', ')||'None selected';
-  }
-  function getRadio(name){
-    var el=document.querySelector('input[name="'+name+'"]:checked');
-    return el?el.value:'Not answered';
-  }
-  function getVal(name){
-    var el=document.querySelector('[name="'+name+'"]');
-    return el?el.value.trim():'';
-  }
-  function toBase64(file){
-    return new Promise(function(res,rej){var r=new FileReader();r.onload=function(){res(r.result.split(',')[1]);};r.onerror=rej;r.readAsDataURL(file);});
-  }
-  function nowStr(){return new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});}
-
-  document.getElementById('appForm').addEventListener('submit',async function(e){
-    e.preventDefault();
-    var errors=[];
-    if(!getVal('first_name'))errors.push('First name');
-    if(!getVal('last_name'))errors.push('Last name');
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(getVal('app_email')))errors.push('Valid email address');
-    if(getVal('app_phone').length<7)errors.push('Phone number');
-    if(!getVal('app_address'))errors.push('Street address');
-    if(!getVal('hours_week'))errors.push('Hours per week');
-    if(!getVal('start_date'))errors.push('Start date');
-    if(!document.getElementById('appConsent').checked)errors.push('Consent checkbox');
-
-    var statusEl=document.getElementById('appStatusMsg');
-    if(errors.length>0){
-      statusEl.className='app-status error';
-      statusEl.textContent='Please complete the following: '+errors.join(', ')+'.';
-      statusEl.style.display='block';
-      return;
-    }
-
-    var btn=document.getElementById('appSubmitBtn');
-    btn.disabled=true;btn.textContent='Sending…';
-    statusEl.style.display='none';
-
-    var params={
-      applicant_name:getVal('first_name')+' '+getVal('last_name'),
-      first_name:getVal('first_name'),
-      last_name:getVal('last_name'),
-      email:getVal('app_email'),
-      phone:getVal('app_phone'),
-      address:getVal('app_address'),
-      work_auth:getRadio('work_auth'),
-      age_18:getRadio('age_18'),
-      felony:getRadio('felony'),
-      transportation:getRadio('transportation'),
-      avail_days:getChecked('avail_days'),
-      hours_week:getVal('hours_week'),
-      start_date:getVal('start_date'),
-      prior_exp:getRadio('prior_exp'),
-      exp_detail:getVal('exp_detail')||'N/A',
-      referral:getVal('referral_src')||'Not specified',
-      additional:getVal('additional')||'N/A',
-      submitted_at:nowStr(),
-      reply_to:getVal('app_email'),
-      has_resume:'No résumé uploaded',
-      resume_name:'None'
-    };
-
-    var resumeFile=appFileInput.files[0];
-    if(resumeFile){
-      try{
-        var b64=await toBase64(resumeFile);
-        params.resume_name=resumeFile.name;
-        params.resume_data=b64;
-        params.has_resume='Yes — see attachment';
-      }catch(err){params.has_resume='File could not be attached';}
-    }
-
-    try{
-      await emailjs.send('service_qd4csnq','template_5emaxh8',params);
-      statusEl.className='app-status success';
-      statusEl.textContent='✓ Your application has been submitted! We\'ll be in touch soon.';
-      statusEl.style.display='block';
-      document.getElementById('appForm').reset();
-      appFileNameEl.style.display='none';
-    }catch(err){
-      statusEl.className='app-status error';
-      statusEl.textContent='Something went wrong. Please email us directly at alissahicks@redeemedandcleaned.com.';
-      statusEl.style.display='block';
-      console.error('EmailJS error:', err);
-    }
-    btn.disabled=false;btn.textContent='Submit Application';
-  });
-</script>
 </body>
 </html>
