@@ -132,6 +132,7 @@
   .org-sub-fields{background:var(--white);border:1px solid #ddd6cc;border-radius:4px;padding:14px 16px;margin-top:10px;display:none}
   .org-sub-fields .org-label{font-size:0.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--dark);font-weight:700;margin-bottom:6px;margin-top:12px;display:block}
   .org-sub-fields .org-label:first-child{margin-top:0}
+  .org-scheduling-note{font-size:0.75rem;color:#b07a10;background:#fdf6e3;border:1px solid #f0d98a;border-radius:4px;padding:9px 12px;margin-top:10px;line-height:1.6;font-style:italic}
 
   footer{background:var(--dark);color:rgba(255,255,255,0.6);text-align:center;padding:36px 5%}
   .foot-logo{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--white);margin-bottom:8px}
@@ -218,7 +219,7 @@
         </div>
         <div class="price-name">The Welcome Clean</div>
         <div class="price-tag-line">Light Refresh</div>
-        <div class="price-amount"><sup>$</sup>75 <small>– $150</small></div>
+        <div class="price-amount"><sup>$</sup>100 <small>– $200</small></div>
         <div class="price-note">One-time visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
         <p class="price-desc">A lighter, one-time refresh for homes that just need to look their best — before guests arrive, after a small gathering, or any occasion calling for a quick reset.</p>
@@ -239,7 +240,7 @@
         </div>
         <div class="price-name">The Restored Clean</div>
         <div class="price-tag-line">Deep Refresh</div>
-        <div class="price-amount"><sup>$</sup>180 <small>– $300</small></div>
+        <div class="price-amount"><sup>$</sup>200 <small>– $500</small></div>
         <div class="price-note">One-time visit &middot; up to 4,000 sq ft &middot; 3 bed / 2 bath</div>
         <div class="price-divider"></div>
         <p class="price-desc">Whether you're preparing for a special event or coming through a hard season — the loss of a loved one, a new baby, an illness, or simply more than you could keep up with — this deep, top-to-bottom clean restores your home to a place of peace.</p>
@@ -258,8 +259,8 @@
         </div>
         <div class="price-name">The Fresh Start Clean</div>
         <div class="price-tag-line">Move-In / Move-Out</div>
-        <div class="price-amount"><sup>$</sup>250 <small>– $500</small></div>
-        <div class="price-note">Flat rate &middot; up to 4,000 sq ft &middot; 4 bed / 3 bath</div>
+        <div class="price-amount"><sup>$</sup>300<small>+</small></div>
+        <div class="price-note">Custom quote based on home size</div>
         <div class="price-divider"></div>
         <p class="price-desc">Starting fresh or leaving well — this package ensures every inch is spotless for the next chapter. Great for renters, homeowners, and local landlords beginning or ending a lease.</p>
         <ul class="price-includes">
@@ -271,6 +272,26 @@
           <li>Additional garage +$20 each</li>
           <li>Bathroom &amp; kitchen sanitized thoroughly</li>
           <li>Certificate of clean available on request</li>
+        </ul>
+      </div>
+
+      <div class="price-card">
+        <div class="price-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 7h18"/><path d="M6 7v13a1 1 0 001 1h10a1 1 0 001-1V7"/><path d="M9 4h6a1 1 0 011 1v2H8V5a1 1 0 011-1z"/><path d="M10 12h4"/></svg>
+        </div>
+        <div class="price-name">The Settled Home</div>
+        <div class="price-tag-line">Restore Order</div>
+        <div class="price-amount"><sup>$</sup>100<small>+</small></div>
+        <div class="price-note">Per room &middot; priced by size</div>
+        <div class="price-divider"></div>
+        <p class="price-desc">Sometimes a room doesn't need cleaning so much as calm. This is about returning what's out of place to a sensible, fitting home — no bins, no label-makers, just order restored. Perfect for a kitchen, pantry, closet, or bedroom that's gotten away from you.</p>
+        <ul class="price-includes">
+          <li>One room, thoughtfully put back in order</li>
+          <li>Items returned to a proper, fitting place</li>
+          <li>Surfaces cleared &amp; reset</li>
+          <li>Priced by room size — starting at $100</li>
+          <li>Add additional rooms as needed</li>
+          <li>Can be booked alone or alongside a clean</li>
         </ul>
       </div>
 
@@ -369,14 +390,56 @@
             </div>
           </div>
           <div class="form-group">
+            <label>How Many Finished Levels?</label>
+            <select id="levels" onchange="handleLevelsChange()">
+              <option value="">Select one</option>
+              <option value="1">1 — single level</option>
+              <option value="2">2 levels</option>
+              <option value="3">3 levels</option>
+              <option value="basement">Includes a finished basement</option>
+            </select>
+          </div>
+          <div class="org-sub-fields" id="levelsSubFields">
+            <span class="org-label">On the additional / lower level(s), are there any of these? Check all that apply.</span>
+            <div class="checkbox-group" style="margin-top:4px">
+              <label><input type="checkbox" class="level-extra" value="Additional kitchen"> Additional kitchen</label>
+              <label><input type="checkbox" class="level-extra" value="Additional bathroom(s)"> Additional bathroom(s)</label>
+              <label><input type="checkbox" class="level-extra" value="Additional bedroom(s)"> Additional bedroom(s)</label>
+            </div>
+            <span class="org-label" style="margin-top:12px">How many extra rooms total on those levels?</span>
+            <select id="levelExtraCount">
+              <option value="">Select number (optional)</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5+</option>
+            </select>
+          </div>
+          <div class="form-group">
             <label>Service Interested In *</label>
             <select id="service" required onchange="handleServiceChange()">
               <option value="">Select a service</option>
-              <option>The Welcome Clean — Light Refresh ($75–$150)</option>
-              <option>The Restored Clean — Deep Refresh ($180–$300)</option>
-              <option>The Fresh Start Clean — Move-In / Move-Out ($250–$500)</option>
+              <option>The Welcome Clean — Light Refresh ($100–$200)</option>
+              <option>The Restored Clean — Deep Refresh ($200–$500)</option>
+              <option>The Fresh Start Clean — Move-In / Move-Out ($300+)</option>
+              <option>The Settled Home — Restore Order ($100+ per room)</option>
               <option>Not sure yet — need a recommendation</option>
             </select>
+          </div>
+          <!-- Settled Home room fields — shown only when that service is selected -->
+          <div class="org-sub-fields" id="settledFields">
+            <span class="org-label">Room Size (per room)</span>
+            <select id="settledSize">
+              <option value="">Select size range</option>
+              <option>Small — under 50 sq ft (e.g. closet, pantry) — $100</option>
+              <option>Medium — 50–150 sq ft (e.g. large closet, small bedroom) — ~$150</option>
+              <option>Large — 150–300 sq ft (e.g. primary bedroom, kitchen) — ~$200</option>
+            </select>
+            <span class="org-label" style="margin-top:12px">How Many Rooms?</span>
+            <select id="settledRoomCount">
+              <option value="">Select number</option>
+              <option>1 room</option><option>2 rooms</option><option>3 rooms</option>
+              <option>4 rooms</option><option>5+ rooms</option>
+            </select>
+            <div class="org-scheduling-note">&#9432; Note: Depending on the space, this may be scheduled during your clean or as its own separate visit — we'll confirm when we quote you.</div>
           </div>
           <div class="form-group">
             <label>What's the Occasion?</label>
@@ -459,6 +522,7 @@
   function handleServiceChange(){
     var val = document.getElementById('service').value;
     var isRestored = val.indexOf('Restored Clean') !== -1;
+    var isSettled = val.indexOf('Settled Home') !== -1;
 
     var winCb = document.getElementById('addonWindows');
     var ovenCb = document.getElementById('addonOven');
@@ -482,6 +546,26 @@
       ovenLabel.innerHTML = '<input type="checkbox" class="addon" id="addonOven" value="Oven Deep Clean (+$30)"> Oven Deep Clean (+$30)';
       document.getElementById('restoredWinCountGroup').style.display = 'none';
       document.getElementById('restoredWinCount').value = '';
+    }
+
+    // Settled Home per-room fields
+    var settled = document.getElementById('settledFields');
+    settled.style.display = isSettled ? 'block' : 'none';
+    if(!isSettled){
+      document.getElementById('settledSize').value = '';
+      document.getElementById('settledRoomCount').value = '';
+    }
+  }
+
+  function handleLevelsChange(){
+    var val = document.getElementById('levels').value;
+    var sub = document.getElementById('levelsSubFields');
+    // Show extra-room questions whenever more than one level or a finished basement
+    var showExtras = (val === '2' || val === '3' || val === 'basement');
+    sub.style.display = showExtras ? 'block' : 'none';
+    if(!showExtras){
+      document.querySelectorAll('.level-extra:checked').forEach(function(c){c.checked=false;});
+      document.getElementById('levelExtraCount').value = '';
     }
   }
 
@@ -515,6 +599,18 @@
       winCountVal = 'N/A';
     }
 
+    // Settled Home room data
+    var isSettled = document.getElementById('service').value.indexOf('Settled Home') !== -1;
+    var settledSize = isSettled ? (document.getElementById('settledSize').value || 'Not specified') : 'N/A';
+    var settledRooms = isSettled ? (document.getElementById('settledRoomCount').value || 'Not specified') : 'N/A';
+
+    // Finished levels data
+    var levelsVal = document.getElementById('levels').value || 'Not specified';
+    var levelExtras = [];
+    document.querySelectorAll('.level-extra:checked').forEach(function(c){levelExtras.push(c.value);});
+    var levelExtrasStr = levelExtras.length ? levelExtras.join(', ') : 'None noted';
+    var levelExtraCount = document.getElementById('levelExtraCount').value || 'Not specified';
+
     var params={
       to_email:'alissahicks@redeemedandcleaned.com',
       from_name:document.getElementById('firstName').value+' '+document.getElementById('lastName').value,
@@ -524,8 +620,13 @@
       home_size:document.getElementById('homeSize').value||'Not specified',
       bedrooms:document.getElementById('bedrooms').value||'Not specified',
       bathrooms:document.getElementById('bathrooms').value||'Not specified',
+      levels:levelsVal,
+      level_extras:levelExtrasStr,
+      level_extra_count:levelExtraCount,
       service:document.getElementById('service').value,
       occasion:document.getElementById('occasion').value||'Not specified',
+      settled_size:settledSize,
+      settled_rooms:settledRooms,
       addons:addons.length?addons.join(', '):'None selected',
       pets:document.getElementById('pets').value||'Not specified',
       notes:document.getElementById('notes').value||'None',
